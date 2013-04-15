@@ -12,8 +12,8 @@
 ################################################################################################################
 
 
-*:* *:* *:* *:*
-* * * BGLERR_IDO_PKT_TIMEOUT connection lost to node/link/service card
+*:* *:* *:* *:*	
+* * * BGLERR_IDO_PKT_TIMEOUT connection lost to node/link/service card	communicationFailure
 * correctable errors exceeds threshold (iar * lr *
 * ddr error(s) detected and corrected on rank * symbol * over * seconds
 * ddr errors(s) detected and corrected on rank * symbol *, bit *
