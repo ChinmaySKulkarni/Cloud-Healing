@@ -1,0 +1,16 @@
+cacheUncorrectableError
+SRAMUncorrectableError
+DDRCorrectableInfo
+FPUAlignmentInfo
+floatingPointError
+cacheCorrectableInfo
+rbsActivatedInfo
+powerModuleNotAccessible
+torusCorrectableError
+kernelInfo
+treeResyncInfo
+DBUpdateInfo
+badCableError
+IPerror
+BGLMasterInitInfo
+ESymInfo
