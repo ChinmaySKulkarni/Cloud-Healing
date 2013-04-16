@@ -1,6 +1,22 @@
 #!/bin/bash
 
-
+create_table() {
+mysql -u cloud --password=Shaatir1\! <<!
+	CREATE  TABLE `data_set`.`new_table` (
+	  `rec_id` INT NOT NULL ,
+	  `ex_tag` VARCHAR(45) NULL ,
+	  `ex_utime` INT(11) NULL ,
+	  `ex_date` DATE NULL ,
+	  `ex_source` VARCHAR(45) NULL ,
+	  `event_time` DATETIME NULL ,
+	  `location` VARCHAR(45) NULL ,
+	  `event_type` VARCHAR(45) NULL ,
+	  `facility` VARCHAR(45) NULL ,
+	  `severity` VARCHAR(45) NULL ,
+	  `entry_data` TEXT NULL ,
+	  PRIMARY KEY (`rec_id`) );
+!
+}
 load_data(){
 		  #Input variables
 		  input_file=${1}

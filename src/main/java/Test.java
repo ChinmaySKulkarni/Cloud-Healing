@@ -44,7 +44,7 @@ public class Test {
                     + testing_data.classAttribute().value(
                     (int) testing_data.instance(i).classValue()));
             System.out.println(". predicted value: "
-                    + testing_data.classAttribute().value((int) pred));
+                    + training_data.classAttribute().value((int) pred));
 
         }
     }
