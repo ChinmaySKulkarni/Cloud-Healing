@@ -15,7 +15,7 @@
  */
 
 /*
- *    Apriori.java
+ *    Apriori_Old.java
  *    Copyright (C) 1999 Eibe Frank,Mark Hall
  *
  */
@@ -75,7 +75,7 @@ import weka.gui.beans.Associator;
  * @author Eibe Frank (eibe@cs.waikato.ac.nz)
  * @author Mark Hall (mhall@cs.waikato.ac.nz)
  * @version $Revision: 1.1.1.1 $ */
-public class Apriori extends Associator implements OptionHandler {
+public class Apriori_Old extends Associator implements OptionHandler {
 
     /** The minimum support. */
     protected double m_minSupport;
@@ -151,7 +151,7 @@ public class Apriori extends Associator implements OptionHandler {
      * minimum confidence and the maximum number of rules
      * the minimum confidence.
      */
-    public Apriori() {
+    public Apriori_Old() {
 
         resetOptions();
     }
@@ -492,7 +492,6 @@ public class Apriori extends Associator implements OptionHandler {
 
         String [] options = new String [16];
         int current = 0;
-
         if (m_outputItemSets) {
             options[current++] = "-I";
         }
@@ -955,7 +954,7 @@ public class Apriori extends Associator implements OptionHandler {
 
         String trainFileString;
         StringBuffer text = new StringBuffer();
-        Apriori apriori = new Apriori();
+        Apriori_Old apriori = new Apriori_Old();
         Reader reader;
 
         try {

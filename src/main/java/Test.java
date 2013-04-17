@@ -1,5 +1,5 @@
 import weka.classifiers.meta.FilteredClassifier;
-import weka.classifiers.trees.ADTree;
+import weka.classifiers.trees.J48;
 import weka.core.Instances;
 import weka.filters.unsupervised.attribute.Remove;
 import java.io.BufferedReader;
@@ -25,8 +25,8 @@ public class Test {
         System.out.println("Summary: " + summary);
         System.out.println();
 
-        // J48 j48 = new J48();
-        ADTree adt = new ADTree();
+        J48 j48 = new J48();
+
 
         Remove rm = new Remove();
 
@@ -34,7 +34,7 @@ public class Test {
 
         FilteredClassifier fc = new FilteredClassifier();
         fc.setFilter(rm);
-        fc.setClassifier(adt);
+        fc.setClassifier(j48);
 
         fc.buildClassifier(training_data);
 

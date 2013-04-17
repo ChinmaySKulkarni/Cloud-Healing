@@ -1,11 +1,11 @@
-package com.cloudProject;
+import org.apache.commons.lang3.StringUtils;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class CompressData {
 

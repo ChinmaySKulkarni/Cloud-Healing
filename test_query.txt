@@ -1,0 +1,5 @@
+UPDATE blue_gene_ras SET entry_data = 'def' WHERE entry_data like 'abc';
+UPDATE blue_gene_ras SET entry_data = 'jk' WHERE entry_data like 'hi';
+UPDATE blue_gene_ras SET entry_data = 'no' WHERE entry_data like 'lm';
+UPDATE blue_gene_ras SET entry_data = 'st' WHERE entry_data like 'qr';
+UPDATE blue_gene_ras SET entry_data = 'wx' WHERE entry_data like 'uv';
