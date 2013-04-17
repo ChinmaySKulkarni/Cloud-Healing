@@ -1,17 +1,3 @@
-################################################################################################################
-# README                                                                                                       #
-#---------                                                                                                     #
-#                                                                                                              #
-# The lines of text below represent the message type descriptions of the event log clusters which were manually#
-# extracted from the high performance cluster event logs collected from BlueGene/L supercomputer located at    #
-# Lawrence Livermore National Laboratories. The original event logs can be downloaded from                     #
-# http://cfdr.usenix.org/                                                                                      #
-# This is information is provided to be freely used by all. All the authors ask that proper credit be given if #
-# the use of this information results in a publication.                                                        #
-#                                                                                                              #
-################################################################################################################
-
-
 %:% %:% %:% %:%
 % % % BGLERR_IDO_PKT_TIMEOUT connection lost to node/link/service card	linkCardFailure
 L3 correctable errors exceeds threshold (iar % lr %	cacheUncorrectableError
@@ -48,158 +34,120 @@ BGLMaster has been started: ./BGLMaster --consoleip 127.0.0.1 --consoleport 3203
 byte ordering exception.....................0	byteOrderingFailure
 Can not get assembly information for node card	linkCardFailure
 capture %	DDRFailure
-CE sym %	CESymInfo
+CE sym %		CESymInfo
 CHECK_INITIAL_GLOBAL_INTERRUPT_VALUES	interruptValueFailure
-chip select...........0
-ciod: % coordinate % exceeds physical dimension % at line % of node map file %
-ciod: cpu % at treeaddr % sent unrecognized message %
-ciod: duplicate canonical-rank % to logical-rank % mapping at line % of node map file %
-ciod: Error creating node map from file % Argument list too long
-ciod: Error creating node map from file % Bad address
-ciod: Error creating node map from file % Bad file descriptor
-ciod: Error creating node map from file % Block device required
-ciod: Error creating node map from file % Cannot allocate memory
-ciod: Error creating node map from file % Device or resource busy
-ciod: Error creating node map from file % No child processes
-ciod: Error creating node map from file % No such file or directory
-ciod: Error creating node map from file % Permission denied
-ciod: Error creating node map from file % Resource temporarily unavailable
-ciod: Error loading % invalid or missing program image, Exec format error
-ciod: Error loading % invalid or missing program image, No such device
-ciod: Error loading % invalid or missing program image, No such file or directory
-ciod: Error loading % invalid or missing program image, Permission denied
-ciod: Error loading % not a CNK program image
-ciod: Error loading % program image too big, % > %
-ciod: Error loading -mode VN: invalid or missing program image, No such file or directory
-ciod: Error opening node map file % No such file or directory
-ciod: Error reading message prefix after LOAD_MESSAGE on CioStream socket to % % % % %
-ciod: Error reading message prefix on CioStream socket to % Connection reset by peer
-ciod: Error reading message prefix on CioStream socket to % Connection timed out
-ciod: Error reading message prefix on CioStream socket to % Link has been severed
-ciod: failed to read message prefix on control stream (CioStream socket to %
-ciod: for node % incomplete data written to core file %
-ciod: for node % read continuation request but ioState is %
-ciod: generated % core files for program %
-ciod: In packet from node % % message code % is not % or 4294967295 % % % %
-ciod: In packet from node % % message still ready for node % % % % %
-ciod: LOGIN chdir(%) failed: Input/output error
-ciod: LOGIN chdir(%) failed: No such file or directory
-ciod: LOGIN % failed: Permission denied
-ciod: Message code % is not % or 4294967295
-ciod: Missing or invalid fields on line % of node map file %
-ciod: pollControlDescriptors: Detected the debugger died.
-ciod: Received signal % % % %
-ciod: sendMsgToDebugger: error sending PROGRAM_EXITED message to debugger.
-ciod: Unexpected eof at line % of node map file %
-ciodb has been restarted.
-close EDRAM pages as soon as possible....0
-com.ibm.bgldevices.BulkPowerModule with VPD of com.ibm.bgldevices.BulkPowerModule$VpdReply: IBM Part Number: 53P5763, Vendor: Cherokee International, Vendor Serial Number: 4274124, Assembly Revision:
-command manager unit summary.....................0
-Controlling BG/L rows [ 0 1 2 3 ]
-Controlling BG/L rows [ 0 1 2 3 4 5 6 7 ]
-core configuration register: %
-Core Configuration Register 0: %
-correctable %
-correctable error detected in directory %
-correctable error detected in EDRAM bank %
-critical input interrupt %
-critical input interrupt % % warning for % % wire
-critical input interrupt % % warning for torus % wire, suppressing further interrupts of same type
-data % plb %
-data address: %
-data address space................0
-data cache % parity error detected. attempting to correct
-data storage interrupt
-data store interrupt caused by %
-data TLB error interrupt data address space................0
-dbcr0=% dbsr=% ccr0=%
-d-cache % parity %
-DCR % : %
-ddr: activating redundant bit steering for next allocation: % %
-ddr: activating redundant bit steering: % %
-ddr: excessive soft failures, consider replacing the card
-DDR failing % register: % %
-DDR failing info register: %
-DDR failing info register: DDR Fail Info Register: %
-DDR machine check register: % %
-ddr: redundant bit steering failed, sequencer timeout
-ddr: Suppressing further CE interrupts
-ddr: Unable to steer % % - rank is already steering symbol % Due to multiple symbols being over the correctable e
-ddr: Unable to steer % % - rank is already steering symbol % Due to multiple symbols being over the correctable error threshold, consider replacing the card
-ddr: Unable to steer % % - rank is already steering symbol % Due to multiple symbols being over the correctable
-ddrSize == % || ddrSize == %
-debug interrupt enable............0
-debug wait enable.................0
-DeclareServiceNetworkCharacteristics has been run but the DB is not empty
-DeclareServiceNetworkCharacteristics has been run with the force option but the DB is not empty
-disable all access to cache directory....0
-disable apu instruction broadcast........0
-disable flagging of DDR UE's as major internal error.0
-disable speculative access...............0
-disable store gathering..................0
-disable trace broadcast..................0
-disable write lines 2:4..................0
-divide-by-zero %
-enable % exceptions.........0
-enable invalid operation exceptions......0
-enable non-IEEE mode.....................0
-enabled exception summary................0
-EndServiceAction % performed upon % by %
-EndServiceAction % was performed upon % by %
-EndServiceAction is restarting the % cards in Midplane % as part of Service Action %
-EndServiceAction is restarting the % in midplane % as part of Service Action %
-Error getting detailed hw info for node, caught java.io.IOException: Problems with the chip, clear all resets
-Error getting detailed hw info for node, caught java.io.IOException: Problems with the chip, could not enable clock domains
-Error getting detailed hw info for node, caught java.io.IOException: Problems with the chip, could not pull all resets
-Error receiving packet on tree network, expecting type % instead of type % % % % % % % % %
-Error receiving packet on tree network, packet index % greater than max 366 % % % % % % % %
-Error sending packet on tree network, packet at address % is not aligned
-error threshold, consider replacing the card
-Error: unable to mount filesystem
-exception %
-Exception Syndrome Register: %
-exception syndrome register: % 
-Expected 10 active FanModules, but found 9 ( Found % % % % % % % % % ).
-external input interrupt %
-external input interrupt % % % tree receiver % in resynch mode
-external input interrupt % % number of corrected SRAM errors has exceeded threshold
-external input interrupt % % number of corrected SRAM errors has exceeded threshold, suppressing further interrupts of same type
-external input interrupt % % torus sender % retransmission error was corrected
-external input interrupt % % tree header with no target waiting
-external input interrupt % % uncorrectable torus error
-floating point %
-floating point instr. %
-Floating Point Registers:
-Floating Point Status and Control Register: %
-floating point unavailable interrupt
-floating pt ex mode % % 
-force load/store alignment...............0
-Found invalid node ecid in processor card slot % ecid 0000000000000000000000000000
-fpr%=% % % %
-fraction %
-General Purpose Registers:
-general purpose registers:
-generating %
-gister: machine state register: machine state register: machine state register: machine state register: machine state register:
-guaranteed % cache block %
-Hardware monitor caught java.lang.IllegalStateException: while executing I2C Operation caught java.net.SocketException: Broken pipe and is stopping
-Hardware monitor caught java.net.SocketException: Broken pipe and is stopping
-iar % dear %
-i-cache parity error..............0
-icache prefetch %
-Ido chip status changed: % % % % % % % % % % %
-Ido packet timeout
-idoproxy communication failure: socket closed
-idoproxydb has been started: $Name: % $ Input parameters: -enableflush -loguserinfo db.properties BlueGene1
-idoproxydb hit ASSERT condition: ASSERT expression=% Source file=% Source line=% Function=% IdoTransportMgr::SendPacket(IdoUdpMgr%, BglCtlPavTrace%)
-idoproxydb hit ASSERT condition: ASSERT expression=!(nMsgLen > 0x10000) Source file=idomarshalerio.cpp Source line=1929 Function=int IdoMarshalerRecvBuffer::ReadBlock(IdoMsg::IdoMsgHdr%&)
-idoproxydb hit ASSERT condition: ASSERT expression=pTargetMgr Source file=idoclientmgr.cpp Source line=353 Function=int IdoClientMgr::TargetClose(const char%)
-idoproxydb hit ASSERT condition: ASSERT expression=!(RecvMsgHdr.ulLen > 0x10000) Source file=idomarshalerio.cpp Source line=387 Function=virtual int IdoMarshalerIo::RunRecv()
-imprecise machine %
-inexact %
-instance of a correctable ddr. RAS KERNEL INFO % microseconds spent in the rbs signal handler during % calls. % microseconds was the maximum time for a single instance of a correctable ddr.
-instruction address: %
-instruction address space.........0
+chip select...........0	DDRFailure
+ciod: % coordinate % exceeds physical dimension % at line % of node map file %	ciodCoordinateError
+ciod: cpu % at treeaddr % sent unrecognized message %	ciodUnrecognizedMessageEror
+ciod: duplicate canonical-rank % to logical-rank % mapping at line % of node map file %	ciodDuplicateMappingError
+ciod: Error creating node map from file %	ciodNodeMapFileFailure
+ciod: Error loading % invalid or missing program image%	ciodProgramImageFailure
+ciod: Error loading % not a CNK program image	ciodProgramImageFailure
+ciod: Error loading % program image too big, % > %	ciodProgramImageFailure
+ciod: Error loading -mode VN: invalid or missing program image, No such file or directory	ciodProgramImageFailure
+ciod: Error opening node map file % No such file or directory	ciodNodeMapFileFailure
+ciod: Error reading message prefix after LOAD_MESSAGE on CioStream socket to % % % % %	linkCardFailure
+ciod: Error reading message prefix on CioStream socket to % Connection reset by peer	linkCardFailure
+ciod: Error reading message prefix on CioStream socket to % Connection timed out	linkCardFailure
+ciod: Error reading message prefix on CioStream socket to % Link has been severed	linkCardFailure
+ciod: failed to read message prefix on control stream (CioStream socket to %	linkCardFailure
+ciod: generated % core files for program %	ciodCoreFileGenInfo
+ciod: LOGIN chdir(%) failed: Input/output error	ciodLoginFailure
+ciod: LOGIN chdir(%) failed: No such file or directory	ciodLoginFailure
+ciod: LOGIN % failed: Permission denied	ciodLoginFailure
+ciod: Message code % is not % or 4294967295	ciodMessageCodeError
+ciod: Missing or invalid fields on line % of node map file %	ciodNodeMapFileError
+ciod: pollControlDescriptors: Detected the debugger died.	ciodDebuggerDeadInfo
+ciod: Received signal	ciodSignalReceivedInfo
+ciod: sendMsgToDebugger: error sending PROGRAM_EXITED message to debugger.	ciodDebuggerError
+ciod: Unexpected eof at line % of node map file %	ciodNodeMapFileError
+ciodb has been restarted.	ciodbRestartInfo
+close EDRAM pages as soon as possible....0	DDRFailure
+com.ibm.bgldevices.BulkPowerModule with VPD of com.ibm.bgldevices.BulkPowerModule$VpdReply: IBM Part Number: 53P5763	IBMP	artWarning
+command manager unit summary.....................0	commandManagerUnitError
+Controlling BG/L rows [ 0 1 2 3 ]	BGLRowControlInfo
+Controlling BG/L rows [ 0 1 2 3 4 5 6 7 ]	BGLRowControlInfo
+core configuration register: %	coreConfigRegisterError
+Core Configuration Register 0: %	coreConfigRegisterError
+correctable error detected in directory %	dirCorrectableError
+correctable error detected in EDRAM bank %	DDRCorrectableError
+critical input interrupt % % warning for % % wire	badCableError
+data % plb %	plbError
+data address: %	dataAddressInfo
+data address space................0	dataAddressError
+data cache % parity error detected. attempting to correct	CacheErrorInfo
+data storage interrupt	dataStorageInterrupt
+data store interrupt caused by %	dataStorageInterrupt
+data TLB error interrupt	TLBFailure
+dbcr0=% dbsr=% ccr0=%	kernelFailure
+d-cache % parity %	cacheFailure
+DCR % : %	appFailure
+ddr: activating redundant bit steering for next allocation: % %	rbsActivatedInfo
+ddr: activating redundant bit steering: % %	rbsActivatedInfo
+DDR failing % register: % %	DDRFailure
+DDR failing info register: %	DDRFailure
+DDR machine check register: % %	DDRFailure
+ddr: redundant bit steering failed%	DDRFailure
+ddr: Suppressing further CE interrupts	suppressingCEInterruptInfo
+ddr: Unable to steer %	rbsError
+ddrSize == % || ddrSize == %	DDRFailure
+debug interrupt enable............0	kernelFailure
+debug wait enable.................0	kernelFailure
+DeclareServiceNetworkCharacteristics has been run but the DB is not empty	servnetDBWarning
+DeclareServiceNetworkCharacteristics has been run with the force option but the DB is not empty	servnetDBWarning
+disable all access to cache directory....0	cacheFailure
+disable apu instruction broadcast........0	kernelFailure
+disable flagging of DDR UE''s as major internal error.0	DDRFailure
+disable speculative access...............0	cacheFailure
+disable store gathering..................0	cacheFailure
+disable trace broadcast..................0	kernelFailure
+disable write lines 2:4..................0	kernelFailure
+divide-by-zero %	FPUFailure
+enable % exceptions.........0	FPUFailure
+enable invalid operation exceptions......0	FPUFailure
+enable non-IEEE mode.....................0	FPUFailure
+enabled exception summary................0	FPUFailure
+EndServiceAction % performed upon % by %	nodeServiceWarning
+EndServiceAction % was performed upon % by %	nodeServiceWarning
+EndServiceAction is restarting the % cards in Midplane % as part of Service Action %	nodeServiceWarning
+EndServiceAction is restarting the % in midplane % as part of Service Action %	nodeServiceWarning
+Error getting detailed hw info for node	nodeError
+Error receiving packet on tree network	linkCardFailure
+Error sending packet on tree network	linkCardFailure
+error threshold	errorWarning
+Error: unable to mount filesystem	fileSystemFailure
+exception %	kernelFailure
+Expected 10 active FanModules, but found 9 ( Found % % % % % % % % % ).	fanModuleWarning
+external input interrupt % % % tree receiver % in resynch mode	treeResynceInfo
+external input interrupt % % number of corrected SRAM errors has exceeded threshold	excessiveSRAMErrors
+external input interrupt % % torus sender % retransmission error was corrected	torusFailure
+external input interrupt % % tree header with no target waiting	treeNoTarget
+external input interrupt % % uncorrectable torus error	torusFailure
+floating point %	FPUFailure
+floating point unavailable interrupt	FPUFailure
+floating pt ex mode % %	FPUFailure
+force load/store alignment...............0	FPUFailure
+Found invalid node ecid in processor card slot % ecid 0000000000000000000000000000	nodeError
+fpr%=% % % %	FPUFailure
+fraction %	FPUFailure
+General Purpose Registers:	FPUFailure
+generating %	generateCoreInfo
+gister: machine state register: machine state register: machine state register: machine state register: machine state register:	FPUFailure
+guaranteed % cache block %	cacheFailure
+Hardware monitor caught java.lang.IllegalStateException: while executing I2C Operation caught java.net.SocketException: Broken pipe and is stopping	linkCardFailure
+Hardware monitor caught java.net.SocketException: Broken pipe and is stopping	linkCardFailure
+iar % dear %	kernelInfo
+i-cache parity error..............0	cacheFailure
+icache prefetch %	cacheFailure
+Ido chip status changed: % % % % % % % % % % %	idoStatusChangedInfo
+Ido packet timeout	idoTimeoutError
+idoproxy communication failure: socket closed	idoproxyFailure
+idoproxydb has been started: $Name: % $ Input parameters: -enableflush -loguserinfo db.properties BlueGene1	idoProxydbStartedInfo
+idoproxydb hit ASSERT condition%	idoproxydbAssertError
+imprecise machine %	kernelFailure
+inexact %	kernelFailure
+instruction address: %	kernelFailure
+instruction address space.........0	kernelFailure
 instruction cache parity error corrected
 instruction plb %
 interrupt threshold...0

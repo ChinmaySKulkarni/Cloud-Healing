@@ -1,8 +1,8 @@
 #!/bin/bash
 
 create_table() {
-mysql -u cloud --password=Shaatir1\! <<!
-	CREATE  TABLE `data_set`.`new_table` (
+mysql -u cloud --password=Shaatir1\! -e '
+	CREATE  TABLE `data_set`.`blue_gene_ras` (
 	  `rec_id` INT NOT NULL ,
 	  `ex_tag` VARCHAR(45) NULL ,
 	  `ex_utime` INT(11) NULL ,
@@ -14,8 +14,8 @@ mysql -u cloud --password=Shaatir1\! <<!
 	  `facility` VARCHAR(45) NULL ,
 	  `severity` VARCHAR(45) NULL ,
 	  `entry_data` TEXT NULL ,
-	  PRIMARY KEY (`rec_id`) );
-!
+	  PRIMARY KEY (`rec_id`) );' data_set
+
 }
 load_data(){
 		  #Input variables
@@ -34,5 +34,5 @@ load_data(){
                       event_time = str_to_date(@event_time, '%Y-%m-%e-%H.%i.%S.%f');
 !
 }
-
+create_table
 load_data $1
