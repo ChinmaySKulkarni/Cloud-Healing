@@ -28,7 +28,7 @@ BGLRowControlInfo
 dataAddressInfo
 cacheErrorInfo
 dirCorrectableError
-suppressingCEInterruptInfo
+suppressingInterruptInfo
 rbsError
 servnetDBWarning
 nodeServiceWarning
@@ -42,3 +42,17 @@ idoStatusChangedInfo
 idoTimeoutError
 idoProxydbStartedInfo
 idoproxydbAssertError
+cacheErrorCorrectionInfo
+cacheSummary
+machineCheckInfo
+memoryAndBusSummary
+linkCardInfo
+mmcsInfo
+idoInfo
+nodeWarning
+parityError
+prefetchError
+FPUInfo
+CMCSInfo
+discoveryInfo
+DDRInfo
