@@ -46,7 +46,7 @@ public class RefineMessageLog {
     public static void main(String[] args){
         String inputFile = args[0];
         String[] fileName = inputFile.split("\\.");
-        String outputFile = fileName[0] + "_query." + fileName[1];
+        String outputFile = fileName[0] + "_query.sql";
         RefineMessageLog data = new RefineMessageLog();
         data.refine(inputFile,outputFile);
     }

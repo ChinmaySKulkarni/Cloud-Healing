@@ -1,7 +1,7 @@
 cacheUncorrectableError
 SRAMUncorrectableError
 DDRCorrectableInfo
-FPUAlignmentInfo
+FPUAlignmentError
 floatingPointError
 cacheCorrectableInfo
 rbsActivatedInfo
@@ -23,6 +23,7 @@ ciodDebuggerDeadInfo
 ciodSignalReceivedInfo
 ciodDebuggerError
 ciodbRestartInfo
+ciodUnrecognizedMessageError
 IBMPartWarning
 BGLRowControlInfo
 dataAddressInfo
@@ -56,3 +57,8 @@ FPUInfo
 CMCSInfo
 discoveryInfo
 DDRInfo
+cidoInfo
+correctableErrorInfo
+DDRWarning
+hardwareWarning
+ciodInfo
