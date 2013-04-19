@@ -11,8 +11,8 @@ mmcs_server exited normally with exit code %	mmcsFailure
 ciodb exited normally with exit code %	ciodbFailure
 idoproxy exited normally with exit code %	idoproxyFailure
 % floating point alignment exceptions	floatingPointError
-% L3 % error(s) (dcr % detected and corrected over % seconds	cacheCorrectableError
-% L3 % error(s) (dcr % detected and corrected	cacheCorrectableError
+% L3 % error(s) (dcr % detected and corrected over % seconds	cacheCorrectableInfo
+% L3 % error(s) (dcr % detected and corrected	cacheCorrectableInfo
 % microseconds spent in the rbs signal handler during % calls. % microseconds was the maximum time for a single instance of a correctable ddr.	rbsActivatedInfo
 % PGOOD error latched on link card	linkCardFailure
 % power module % is not accessible	powerModuleNotAccessible
@@ -38,7 +38,7 @@ CE sym %		CESymInfo
 CHECK_INITIAL_GLOBAL_INTERRUPT_VALUES	interruptValueFailure
 chip select...........0	DDRFailure
 ciod: % coordinate % exceeds physical dimension % at line % of node map file %	ciodCoordinateError
-ciod: cpu % at treeaddr % sent unrecognized message %	ciodUnrecognizedMessageEror
+ciod: cpu % at treeaddr % sent unrecognized message %	ciodUnrecognizedMessageError
 ciod: duplicate canonical-rank % to logical-rank % mapping at line % of node map file %	ciodDuplicateMappingError
 ciod: Error creating node map from file %	ciodNodeMapFileFailure
 ciod: Error loading % invalid or missing program image%	ciodProgramImageFailure
@@ -118,7 +118,7 @@ error threshold	errorWarning
 Error: unable to mount filesystem	fileSystemFailure
 exception %	kernelFailure
 Expected 10 active FanModules, but found 9 ( Found % % % % % % % % % ).	fanModuleWarning
-external input interrupt % % % tree receiver % in resynch mode	treeResynceInfo
+external input interrupt % % % tree receiver % in resynch mode	treeResyncInfo
 external input interrupt % % number of corrected SRAM errors has exceeded threshold	excessiveSRAMErrors
 external input interrupt % % torus sender % retransmission error was corrected	torusFailure
 external input interrupt % % tree header with no target waiting	treeNoTarget
@@ -207,7 +207,7 @@ msr=% dear=% esr=% fpscr=%	kernelFailure
 New ido chip inserted into the database: % % % %	idoInfo
 NFS Mount failed%	NFSFailure
 no ethernet link	linkCardFailure
-No power module % found found on link card	linkCardError
+No power module % found found on link card	linkCardFailure
 Node card is not fully functional	nodeFailure
 Node card status:%	nodeError
 Node card VPD check:%	nodeFailure
@@ -239,7 +239,7 @@ quiet NaN................................0	FPUFailure
 qw trapped............0	FPUInfo
 r%=% r%=% r%=% r%=%	kernelFailure
 regctl scancom interface.........................0	kernelFailure
-reserved.................................0	kerelFailure
+reserved.................................0	kernelFailure
 round nearest............................0	FPUInfo
 round toward %	FPUInfo
 rts assertion failed%	rtsFailure
@@ -247,7 +247,7 @@ rts: bad message header:%	rtsFailure
 rts internal error	rtsFailure
 rts: kernel terminated for reason %	rtsFailure
 rts panic! - stopping execution	rtsFailure
-rts tree/torus link training failed:% torusFailure
+rts tree/torus link training failed:%	torusFailure
 Running as background command	CMCSInfo
 % % Status(A)	discoveryInfo
 shutdown complete	kernelInfo
@@ -274,7 +274,7 @@ uncorrectable %	DDRFailure
 underflow %	FPUFailure
 VALIDATE_LOAD_IMAGE_CRC_IN_DRAM	DDRInfo
 wait state enable.................0	kernelInfo
-While initializing link card iDo machine with LP of%	linkCardError
+While initializing link card iDo machine with LP of%	linkCardFailure
 While initializing node card%	nodeFailure
 While inserting monitor info into DB caught java.lang.NullPointerException	kernelFailure
 While reading FanModule%	linkCardFailure

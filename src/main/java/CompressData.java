@@ -9,25 +9,36 @@ import java.util.List;
 
 public class CompressData {
 
-    private static final int timeIndex = 1;
+    private static final int recIdIndex = 0;
+    private static final int exTagIndex = 1;
+    private static final int exUtimeIndex = 2;
+    private static final int exDateIndex = 3;
+    private static final int exSourceIndex = 4;
+    private static final int eventTimeIndex = 5;
+    private static final int locationIndex = 6;
+    private static final int eventTypeIndex = 7;
+    private static final int facilityIndex = 8;
+    private static final int severityIndex = 9;
+    private static final int entryDataIndex = 10;
+    private static final String DELIMITER = "|";
+
     private static final int timeDifference = 300;
 
     public void temporalCompress(String inFileName, String outFileName) {
         ArrayList<Integer> fieldIndexList = new ArrayList<Integer>();
-        fieldIndexList.add(2);
-        fieldIndexList.add(3);
-        fieldIndexList.add(8);
+        fieldIndexList.add(locationIndex);
+        fieldIndexList.add(entryDataIndex);
 
-        compress(inFileName, outFileName, fieldIndexList, timeIndex, timeDifference);
+        compress(inFileName, outFileName, fieldIndexList, eventTimeIndex, timeDifference);
     }
 
     public void spatialCompress(String inFileName, String outFileName) {
         ArrayList<Integer> fieldIndexList = new ArrayList<Integer>();
-        fieldIndexList.add(2);
+        fieldIndexList.add(entryDataIndex);
         fieldIndexList.add(4);
         fieldIndexList.add(8);
 
-        compress(inFileName, outFileName, fieldIndexList, timeIndex, timeDifference);
+        compress(inFileName, outFileName, fieldIndexList, eventTimeIndex, timeDifference);
     }
 
     public void removeDuplicates(String inFileName, String outFileName) {
@@ -48,7 +59,7 @@ public class CompressData {
             dataRow = BGLFile.readLine();
             long currentTime = 0L;
             while (dataRow != null) {
-                String[] recordRow = dataRow.split(",");
+                String[] recordRow = dataRow.split(DELIMITER);
 
                 ArrayList<String> recordRowList = new ArrayList<String>();
                 for(int fieldIndex : fieldIndexList)
@@ -108,7 +119,7 @@ public class CompressData {
 
     public static void main(String[] args) {
 
-        String inputFile = "blue_gene.csv";
+        String inputFile = args[1];
         String temporalFile = inputFile.substring(0, inputFile.length()-4) + "_temporal.csv";
         String spatialFile = temporalFile.substring(0, temporalFile.length()-4) + "_spatial.csv";
 
