@@ -2,7 +2,7 @@
 
 create_table() {
 mysql -u cloud --password=Shaatir1\! -e '
-	CREATE  TABLE `data_set`.`blue_gene_ras` (
+	CREATE  TABLE `data_set`.`blue_gene_ras_bak` (
 	  `rec_id` INT NOT NULL ,
 	  `ex_tag` VARCHAR(45) NULL ,
 	  `ex_utime` INT(11) NULL ,
@@ -26,7 +26,7 @@ load_data(){
 
 		  mysql  --local-infile -u cloud --password=Shaatir1\! <<!
 		  load data local infile '$input_file' 
-		  into table data_set.blue_gene_ras
+		  into table data_set.blue_gene_ras_bak
 		  fields terminated by ','
 		  lines terminated by '\n'
 		  (rec_id, ex_tag, ex_utime, @ex_date, ex_source, @event_time, location, event_type, facility, severity, entry_data)

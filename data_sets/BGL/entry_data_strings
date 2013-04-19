@@ -34,7 +34,7 @@ BGLMaster has been started: ./BGLMaster --consoleip 127.0.0.1 --consoleport 3203
 byte ordering exception.....................0	byteOrderingFailure
 Can not get assembly information for node card	linkCardFailure
 capture %	DDRFailure
-CE sym %		CESymInfo
+CE sym %	CESymInfo
 CHECK_INITIAL_GLOBAL_INTERRUPT_VALUES	interruptValueFailure
 chip select...........0	DDRFailure
 ciod: % coordinate % exceeds physical dimension % at line % of node map file %	ciodCoordinateError
@@ -191,7 +191,7 @@ memory manager uncorrectable %	memoryManagerFailure
 Microloader Assertion	kernelFailure
 MidplaneSwitchController performing bit sparing on % bit %	linkCardInfo
 MidplaneSwitchController::clearPort() bll_clear_port failed: %	linkCardFailure
-MidplaneSwitchController::parityAlignment() pap failed:%		linkCardFailure
+MidplaneSwitchController::parityAlignment() pap failed:%	linkCardFailure
 MidplaneSwitchController::receiveTrain() iap failed:%	linkCardFailure
 MidplaneSwitchController::sendTrain() port disconnected: %	linkCardFailure
 minus % %	FPUFAilure

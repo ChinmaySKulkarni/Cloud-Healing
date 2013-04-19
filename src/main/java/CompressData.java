@@ -20,7 +20,7 @@ public class CompressData {
     private static final int facilityIndex = 8;
     private static final int severityIndex = 9;
     private static final int entryDataIndex = 10;
-    private static final String DELIMITER = "|";
+    private static final String DELIMITER = "\\|";
 
     private static final int timeDifference = 300;
 
@@ -50,12 +50,14 @@ public class CompressData {
 
     private void compress(String inFileName, String outFileName, List<Integer> fieldIndexList, int timeIndex, long timeDifference) {
         BufferedReader BGLFile = null;
+        int rowCount = 0;
         //BufferedWriter OutFile = null;
         String dataRow;
         HashMap<List<String>, String[]> RecordLookup = new HashMap<List<String>, String[]>();
         try {
             BGLFile = new BufferedReader(new FileReader(inFileName));
             //OutFile = new BufferedWriter(new FileWriter(outFileName));
+            rowCount++;
             dataRow = BGLFile.readLine();
             long currentTime = 0L;
             while (dataRow != null) {
@@ -96,7 +98,7 @@ public class CompressData {
                         RecordLookup.remove(key);
                     }
                 }
-
+                rowCount++;
                 dataRow = BGLFile.readLine();
             }
             System.err.println("########-Writing extra values-########");
@@ -107,6 +109,7 @@ public class CompressData {
 
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println("Row:" + rowCount);
         } finally {
             try {
                 BGLFile.close();
