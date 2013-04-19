@@ -1,0 +1,67 @@
+@article{key:article,
+	author = {Sunita B Aher and Lobo L.M.R.J},
+	title = {Article: A Comparative Study of Association Rule Algorithms for Course Recommender System in E-learning},
+	journal = {International Journal of Computer Applications},
+	year = {2012},
+	volume = {39},
+	number = {1},
+	pages = {48-52},
+	month = {February},
+	note = {Published by Foundation of Computer Science, New York, USA}
+}
+
+@INPROCEEDINGS{Agrawal94fastalgorithms,
+    author = {Rakesh Agrawal and Ramakrishnan Srikant},
+    title = {Fast algorithms for mining association rules},
+    booktitle = {Proc. of 20th Intl. Conf. on VLDB},
+    year = {1994},
+    pages = {487--499}
+}
+
+
+LAN [5]
+@INPROCEEDINGS{Fu07exploringevent,
+    author = {Song Fu and Cheng-zhong Xu},
+    title = {Exploring event correlation for failure prediction in coalitions of clusters},
+    booktitle = {in Proceedings of the International Conference for High Performance Computing, Networking, Storage, and Analysis (SC’07},
+    year = {2007}
+}
+
+LAN [6]
+@ARTICLE{5388794,
+author={Gara, A. and Blumrich, M.A. and Chen, D. and Chiu, G.L.-T. and Coteus, P. and Giampapa, M.E. and Haring, R.A. and Heidelberger, P. and Hoenicke, D. and Kopcsay, G.V. and Liebsch, T. A. and Ohmacht, M. and Steinmacher-Burow, B. D. and Takken, T. and Vranas, P.},
+journal={IBM Journal of Research and Development}, title={Overview of the Blue Gene/L system architecture},
+year={2005},
+volume={49},
+number={2.3},
+pages={195-212},
+doi={10.1147/rd.492.0195},
+ISSN={0018-8646},}
+
+LAN [23]
+@inproceedings{Sahoo:2003:CEP:956750.956799,
+ author = {Sahoo, R. K. and Oliner, A. J. and Rish, I. and Gupta, M. and Moreira, J. E. and Ma, S. and Vilalta, R. and Sivasubramaniam, A.},
+ title = {Critical event prediction for proactive management in large-scale computer clusters},
+ booktitle = {Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining},
+ series = {KDD '03},
+ year = {2003},
+ isbn = {1-58113-737-0},
+ location = {Washington, D.C.},
+ pages = {426--435},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/956750.956799},
+ doi = {10.1145/956750.956799},
+ acmid = {956799},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {critical event prediction, large-scale clusters, system event log},
+} 
+
+[17]
+@INPROCEEDINGS{1633531,
+author={Liang, Y. and Zhang, Y. and Jette, M. and Anand Sivasubramaniam and Sahoo, R.},
+booktitle={Dependable Systems and Networks, 2006. DSN 2006. International Conference on}, title={BlueGene/L Failure Analysis and Prediction Models},
+year={2006},
+pages={425-434},
+keywords={checkpointing;parallel machines;BlueGene/L failure analysis;RAS event logs;checkpointing strategies;failure prediction models;parallel machines;Checkpointing;Concurrent computing;Failure analysis;Fault tolerant systems;Hardware;Parallel machines;Prediction methods;Predictive models;Production systems;Runtime},
+doi={10.1109/DSN.2006.18},}
