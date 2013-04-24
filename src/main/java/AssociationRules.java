@@ -19,11 +19,11 @@ public class AssociationRules {
     private Apriori     apriori              = null;
     // apriori specific parameters
     private double deltaValue                = 0.05;
-    private double lowerBoundMinSupportValue =  0.1;
+    private double lowerBoundMinSupportValue =  0.01;
     private int tagId                        =  0;  //Confidence
     // String  metricType: Confidence, Lift, Leverage, Conviction
-    private double minMetricValue            = 0.9;
-    private int numRulesValue                = 100;
+    private double minMetricValue            = 0.1;
+    private int numRulesValue                = 9999999;
     private double significanceLevelValue    = -1.0; // (??)
     private double upperBoundMinSupportValue = 1.0;
 
