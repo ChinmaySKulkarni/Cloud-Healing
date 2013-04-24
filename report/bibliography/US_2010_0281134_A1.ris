@@ -1,0 +1,20 @@
+TY  - PAT
+T1  - ARCHITECTURE FOR A SELF-HEALING COMPUTER SYSTEM
+A1  - MELEN, Roger D. [US], Los Altos Hills CA (US)
+A1  - MOUSSA, Nader W. [US], Stanford CA (US)
+A1  - HONDA, Makoto [US], Menlo Park CA (US)
+A1  - IKAI, Hideo [JP], Tsushima (JP)
+A1  - KATO, Kozo [JP], Okazaki (JP)
+Y1  - 2010/11/04
+Y2  - 2009/03/31
+VL  - 12415777
+IS  - US 2010/0281134 A1
+CY  - US
+UR  - http://www.patentlens.net/patentlens/patent/US_2010_0281134_A1/en/
+L1  - http://www.patentlens.net/patentlens/patent/US_2010_0281134_A1/en/
+L2  - http://www.patentlens.net/patentlens/patent/US_2010_0281134_A1/en/
+M1  - G06F 11/14; G06F 15/16
+M2  - 709217; 714 16; 714E11113
+PB  - 
+N2  - The self-healing system comprises a self-healing processor and an error mitigation system. The self-healing processor includes a code block associated with the operation of a portion of digital logic. The self-healing processor also includes a dynamic signature analysis circuit. The processor executes the code block. The dynamic signature analysis circuit creates a dynamic signature representing the operation of the portion of digital logic associated with the code block. The error mitigation system receives the dynamic signature from the dynamic signature analysis circuit. The error mitigation system compares the dynamic signature to a static signature to determine if the signatures match. If the signatures do not match, then the digital logic associated with the code block has an error. The error mitigation system retries execution of the code block. The error mitigation system stores log information describing the above events.
+ER  - 

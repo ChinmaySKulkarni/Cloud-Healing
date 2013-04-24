@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: coep_compit_report.aux
+The style file: plain.bst
+Database file #1: coep_compit_report.bib
+Warning--to sort, need author or key in WEKA
+You've used 13 entries,
+            2118 wiz_defined-function locations,
+            585 strings with 7227 characters,
+and the built_in function-call counts, 6137 in all, are:
+= -- 535
+> -- 482
+< -- 4
++ -- 192
+- -- 178
+* -- 488
+:= -- 1022
+add.period$ -- 41
+call.type$ -- 13
+change.case$ -- 128
+chr.to.int$ -- 0
+cite$ -- 14
+duplicate$ -- 170
+empty$ -- 376
+format.name$ -- 178
+if$ -- 1252
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 7
+newline$ -- 69
+num.names$ -- 24
+pop$ -- 162
+preamble$ -- 1
+purify$ -- 115
+quote$ -- 0
+skip$ -- 149
+stack$ -- 0
+substring$ -- 222
+swap$ -- 53
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 52
+warning$ -- 1
+while$ -- 36
+width$ -- 15
+write$ -- 141
+(There was 1 warning)

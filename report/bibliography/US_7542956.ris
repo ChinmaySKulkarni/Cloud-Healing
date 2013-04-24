@@ -1,0 +1,17 @@
+TY  - PAT
+T1  - Autonomic computing method and apparatus
+A1  - STRASSNER, John C. [US], North Barrington IL (US)
+A1  - MENICH, Barry J. [US], South Barrington IL (US)
+Y1  - 2009/06/02
+Y2  - 2006/06/07
+VL  - 11422681
+IS  - US 7542956
+CY  - US
+UR  - http://www.patentlens.net/patentlens/patent/US_7542956/en/
+L1  - http://www.patentlens.net/patentlens/patent/US_7542956/en/
+L2  - http://www.patentlens.net/patentlens/patent/US_7542956/en/
+M1  - G06N 5/00
+M2  - 435  6; 600518; 704209; 704272; 706 46
+PB  - EP 1482444A2 (Jan, 2004) ; US 2004/0059966 A1 (Mar, 2004) Chan et al.; US 2005/0034107 A1 (Feb, 2005) Kendall et al.; US 2005/0091352 A1 (Apr, 2005) Alex et al.; US 2005/0216793 A1 (Sep, 2005) Entin et al.; US 2006/0112061 A1 (May, 2006) Masurkar; US 6856942 B2 (Feb, 2005) Garnett et al.
+N2  - The disparate data and commands from are received from a managed resource (102) and have potentially different semantics. The disparate data and commands are processed according to rules received from an autonomic manager (112) to produce a single normalized view of this information. The actual state of the managed resource is determined from the normalized view of disparate data. The actual state of the managed resource (102) is compared to a desired state of the managed resource (102). When a match does not exist between the actual state and the desired state, a configuration adjustment to the managed resource (102) and/or another resource is determined to allow the actual state to be the same as the desired state. Then, the configuration adjustment is applied to the managed resource (102). When a match exists between the actual state and the desired state, maintenance functions associated with the managed resource (102) are performed.
+ER  - 

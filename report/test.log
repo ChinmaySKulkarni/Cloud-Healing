@@ -1,0 +1,78 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2013.4.19)  19 APR 2013 17:27
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**test.tex
+(./test.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ba
+sque, danish, dutch, ukenglish, usenglishmax, finnish, french, german, ngerman,
+ swissgerman, hungarian, italian, bokmal, nynorsk, polish, portuguese, spanish,
+ swedish, loaded.
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+No file test.aux.
+\openout1 = `test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+
+Overfull \hbox (3.214pt too wide) in paragraph at lines 5--6
+ []|\OT1/cmr/m/n/10 column| 
+ []
+
+
+Overfull \hbox (3.214pt too wide) in paragraph at lines 6--7
+ []|\OT1/cmr/m/n/10 column| 
+ []
+
+[1
+
+] (./test.aux) ) 
+Here is how much of TeX's memory you used:
+ 249 strings out of 494579
+ 2764 string characters out of 3168597
+ 47051 words of memory out of 3000000
+ 3558 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 314 hyphenation exceptions out of 8191
+ 23i,8n,17p,153b,107s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on test.dvi (1 page, 368 bytes).

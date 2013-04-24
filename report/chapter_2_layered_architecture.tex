@@ -1,0 +1,42 @@
+%_____________________________________________________________________________________________ 
+% A Holistic Approach to Autonomic Self-Healing Cloud Computing Architecture
+% Chapter 2 - 
+% Fri Apr 19 12:50:42 IST 2013
+%_____________________________________________________________________________________________ 
+
+\chapter{Layered Architecture of a Cloud Computing Environment}
+A Cloud Computing Environment can be looked upon from the perspective of a layered architecture as divided into 8 layers each interlinked with the layers above and below it and divided into 3 major parts.
+\section{Supporting (IT) Infrastructure}
+This layer houses all the actual resources and computing power of the entire system. This layer if of not much importance from the perspective of building autonomic system in a cloud, as it is hardware dependent and a lot of work is already done in this layer.
+\section{Cloud Specific Infrastructure}
+This is the layer that provides most scope for work and it is the only layer that actually defines the cloud-computing environment. 
+\subsection{Cloud (Web) applications}
+This layer includes the services and APIs written using programming platforms like Java, PHP, and Silverlight etc. Making changes to this layer is not feasible because it would mean putting additional burden on the programmers to design systems to incorporate autonomic computing and would make existing systems difficult to port. Also the motive behind the project is to provide a transparent mechanism for self-healing and autonomic computing that cannot be provided through this.
+\subsection{Cloud Software Environment}
+This is the layer that defines the cloud-computing environment. It makes use of the layers below to provide a unified computing environment in the form of a cloud. This is the layer where the Platform-as-a-Service and Infrastructure-as-a-Service frameworks of the cloud reside.
+The cloud software infrastructure layer provides an abstraction level for basic IT resources that are offered as services to higher layers:
+	\begin{itemize}
+		\item Computational resources (usually VMEs)
+		\item Storage
+		\item (Network) communication
+	\end{itemize}
+These services can be used individually, as is typically the case with storage services, but they’re often bundled such that servers are delivered with certain network connectivity and (often) access to storage. This bundle, with or without storage, is usually referred to as IaaS.
+The cloud software environment layer provides services at the application platform level: 
+	\begin{itemize}
+		\item A development and runtime environment for services and applications written in one or more supported languages
+		\item Storage services (a database interface rather than file share)
+		\item Communication infrastructure, such as Microsoft’s Azure service bus.
+	\end{itemize}
+\subsubsection{Computational Resources}
+The cloud-computing environment provides a set of computing resources that can be used to perform work that is desired.
+\subsubsection{Storage}
+One of the major resources that a cloud provides is storage on demand.
+\subsubsection{Communication}
+The backbone of the entire cloud-computing environment is the communication network that binds various nodes.
+We propose that the solution be planned in regard to managing this layer efficiently to provide a robust, self-healing, autonomic cloud-computing system that is fault tolerant and exhibits capabilities to resist and resolve future failures thus making the system impervious to faults.
+
+\subsection{Service Customer}
+This is the highest layer of abstraction that hides all the details of the lower layer and provides services that makes use of the lower layers to do actual work. The layer houses the front end and other network services involved in delivering the services to the end user and actual transmission of data between different components of a cloud computing environment.
+The layer is a very high level abstraction of the layers below it and does not provide opportunity directly for building an autonomic computing environment. At the most, this layer can be used as an interface to provide interaction with the lower level.
+
+%_____________________________________________________________________________________________ 

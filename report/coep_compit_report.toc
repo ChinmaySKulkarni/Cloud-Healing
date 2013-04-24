@@ -1,0 +1,53 @@
+\contentsline {chapter}{List of Tables}{ii}
+\contentsline {chapter}{List of Figures}{iii}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Cloud Computing}{1}
+\contentsline {subsection}{\numberline {1.1.1}Infrastructure as a Service}{2}
+\contentsline {subsection}{\numberline {1.1.2}Platform as a Service}{2}
+\contentsline {subsection}{\numberline {1.1.3}Software as a Service}{3}
+\contentsline {section}{\numberline {1.2}Motivation}{3}
+\contentsline {section}{\numberline {1.3}Main Contribution}{4}
+\contentsline {chapter}{\numberline {2}Layered Architecture of a Cloud Computing Environment}{5}
+\contentsline {section}{\numberline {2.1}Supporting (IT) Infrastructure}{5}
+\contentsline {section}{\numberline {2.2}Cloud Specific Infrastructure}{5}
+\contentsline {subsection}{\numberline {2.2.1}Cloud (Web) applications}{6}
+\contentsline {subsection}{\numberline {2.2.2}Cloud Software Environment}{6}
+\contentsline {subsubsection}{Computational Resources}{7}
+\contentsline {subsubsection}{Storage}{7}
+\contentsline {subsubsection}{Communication}{7}
+\contentsline {subsection}{\numberline {2.2.3}Service Customer}{7}
+\contentsline {chapter}{\numberline {3}Healing}{8}
+\contentsline {section}{\numberline {3.1}Healing – An Overview}{8}
+\contentsline {section}{\numberline {3.2}Faults}{9}
+\contentsline {section}{\numberline {3.3}Fault Tolerance}{10}
+\contentsline {subsection}{\numberline {3.3.1}Information redundancy}{10}
+\contentsline {subsection}{\numberline {3.3.2}Time redundancy}{11}
+\contentsline {subsection}{\numberline {3.3.3}Physical redundancy}{11}
+\contentsline {section}{\numberline {3.4}Need for Prediction}{12}
+\contentsline {section}{\numberline {3.5}Self-Healing}{13}
+\contentsline {chapter}{\numberline {4}Existing Solutions}{14}
+\contentsline {section}{\numberline {4.1}Autonomic computing system with model transfer}{14}
+\contentsline {section}{\numberline {4.2}Architecture for a Self-Healing Computer System}{15}
+\contentsline {section}{\numberline {4.3}System and Method for Achieving Autonomic Computing Self Healing Utilizing Meta Level Reflection and Reasoning}{16}
+\contentsline {section}{\numberline {4.4}Comparison of the various approaches}{17}
+\contentsline {chapter}{\numberline {5}Problem Statement}{19}
+\contentsline {chapter}{\numberline {6}Autonomic Self-Healing Architecture}{20}
+\contentsline {section}{\numberline {6.1}Architecture Overview}{20}
+\contentsline {section}{\numberline {6.2}Components}{21}
+\contentsline {subsection}{\numberline {6.2.1}Resource Pool}{21}
+\contentsline {subsection}{\numberline {6.2.2}Host Cluster}{21}
+\contentsline {subsection}{\numberline {6.2.3}Cloud Management Server}{22}
+\contentsline {subsection}{\numberline {6.2.4}Autonomic Healing Engine}{22}
+\contentsline {subsection}{\numberline {6.2.5}Fault Prediction Engine}{23}
+\contentsline {subsubsection}{Statistical Data}{23}
+\contentsline {subsubsection}{Prediction Scheme}{23}
+\contentsline {section}{\numberline {6.3}Prediction Scheme}{23}
+\contentsline {subsubsection}{Data Scrubber}{23}
+\contentsline {paragraph}{Event Categorization}{24}
+\contentsline {paragraph}{Event Filtering}{25}
+\contentsline {subsection}{\numberline {6.3.1}Prediction}{25}
+\contentsline {chapter}{\numberline {A}Overview of Blue Gene/L System}{27}
+\contentsline {section}{\numberline {A.1}RAS Logs}{28}
+\contentsline {chapter}{\numberline {B}Association Rule Learning}{29}
+\contentsline {section}{\numberline {B.1}Useful Terms}{29}
+\contentsline {section}{\numberline {B.2}Apriori Algorithm for Association Rule Learning}{31}

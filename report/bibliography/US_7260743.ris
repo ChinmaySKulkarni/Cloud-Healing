@@ -1,0 +1,19 @@
+TY  - PAT
+T1  - System and method for achieving autonomic computing self-healing, utilizing meta level reflection and reasoning
+A1  - FELLENSTEIN, Craig William [US], Brookfield CT (US)
+A1  - GUSLER, Carl Phillip [US], Austin TX (US)
+A1  - HAMILTON, II, Rick Allen [US], Charlottesville VA (US)
+A1  - IBRAHIM, Mamdouh [US], Rochester Hills MI (US)
+Y1  - 2007/08/21
+Y2  - 2004/01/13
+VL  - 10756143
+IS  - US 7260743
+CY  - US
+UR  - http://www.patentlens.net/patentlens/patent/US_7260743/en/
+L1  - http://www.patentlens.net/patentlens/patent/US_7260743/en/
+L2  - http://www.patentlens.net/patentlens/patent/US_7260743/en/
+M1  - G06F 11/00
+M2  - 714 26
+PB  - EP 0897151A1 (Feb, 1999) ; JP 4065729 A (Mar, 1992); US 2002/0144187 A1 (Oct, 2002) Morgan et al.; US 2002/0191536 A1 (Dec, 2002) LaForge et al.; US 4034194 A (Jul, 1977) Thomas et al.; US 4322846 A (Mar, 1982) Carroll et al.; US 5107500 A (Apr, 1992) Wakamoto et al.; US 5127005 A (Jun, 1992) Oda et al.; US 5161158 A (Nov, 1992) Chakravarty et al.; US 5170480 A (Dec, 1992) Mohan et al.; US 5331476 A (Jul, 1994) Fry et al.; US 5388252 A (Feb, 1995) Dreste et al.; US 5404503 A (Apr, 1995) Hill et al. 714/31; US 5423025 A (Jun, 1995) Goldman et al.; US 5448722 A (Sep, 1995) Lynne et al. 706/49; US 5539877 A (Jul, 1996) Winokur et al.; US 5602990 A (Feb, 1997) Leete 714/46; US 5768499 A (Jun, 1998) Treadway et al.; US 5771240 A (Jun, 1998) Tobin et al.; US 5862322 A (Jan, 1999) Anglin et al.; US 5956714 A (Sep, 1999) Condon; US 5978594 A (Nov, 1999) Bonnell et al.; US 5983364 A (Nov, 1999) Bortcosh et al. 714/25; US 6006016 A (Dec, 1999) Faigon et al. 714/48; US 6028593 A (Feb, 2000) Rosenberg et al.; US 6085335 A (Jul, 2000) Djoko et al. 714/26; US 6105067 A (Aug, 2000) Batra; US 6134676 A (Oct, 2000) VanHuben et al.; US 6170067 B1 (Jan, 2001) Liu et al. 714/48; US 6182086 B1 (Jan, 2001) Lomet et al.; US 6249755 B1 (Jun, 2001) Yemini et al.; US 6343236 B1 (Jan, 2002) Gibson et al.; US 6363497 B1 (Mar, 2002) Chrabaszcz; US 6442694 B1 (Aug, 2002) Bergman et al.; US 6532552 B1 (Mar, 2003) Benignus et al. 714/25; US 6574744 B1 (Jun, 2003) Kantz et al.; US 6615367 B1 (Sep, 2003) Unkle et al.; US 6681344 B1 (Jan, 2004) Andrew; US 6708333 B1 (Mar, 2004) Glerum et al. 717/171; US 6738928 B1 (May, 2004) Brown; US 6742141 B1 (May, 2004) Miller; US 6779132 B2 (Aug, 2004) Andress et al.; US 6789257 B1 (Sep, 2004) MacPhail 719/316; US 6845469 B2 (Jan, 2005) Hicks et al.; US 6845474 B2 (Jan, 2005) Circenis et al.; US 6865696 B2 (Mar, 2005) Lopke; US 7007200 B2 (Feb, 2006) Salem 714/26; US 7080141 B1 (Jul, 2006) Baekelmans et al. 709/224; US 7194445 B2 (Mar, 2007) Chan et al.; WO 0068793 A1 (Nov, 2000)
+N2  - A mechanism is provided for achieving autonomic computing self-healing utilizing meta level reflection. In a base level, a monitor detects an error in a production environment. The base level provides a reification message comprising data about the error to a meta level. A reasoning system in the meta level receives the reification message and analyzes the data using knowledge of computational components in the base level. The reasoning system identifies a self-healing action for the error and returns a reversion message comprising a signal to implement the self-healing action. Responsive to receiving the signal, the base level implements the self-healing action.
+ER  - 

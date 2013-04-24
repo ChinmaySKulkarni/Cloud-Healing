@@ -1,0 +1,57 @@
+%_____________________________________________________________________________________________ 
+% A Holistic Approach to Autonomic Self-Healing Cloud Computing Architecture
+% Chapter 2 - 
+% Fri Apr 19 12:50:42 IST 2013
+%_____________________________________________________________________________________________
+
+\chapter{Healing}
+\section{Healing – An Overview}
+Healing is the process of restoring a damaged or diseased system to its original working state, which is free from these problems. Being able to automatically detect and discover faults is of great importance for any healing system. The necessary actions must be taken in order to return to a working and fully functional working state. Cloud computing systems must also incorporate healing in order to ensure efficient working which can quickly, efficiently and accurately recover from a problematic state to its previous working state.  
+The cloud computing environment can also suffer from a varied range of problems and failures. Some of these problems are 
+	\begin{itemize}
+		\item Security issues at both the client and at the server ends.
+		\item Privacy of the users that have registered themselves with a remote cloud computing system.
+		\item Integrity of the user data that is stored on the cloud servers.
+		\item Theft of the user data stored on cloud servers.
+		\item Loss of the user data stored on cloud servers.
+		\item Applications to be stored on the cloud which are infected or are remotely stored on the cloud with malicious intent.
+		\item The services and resources provided by a cloud computing infrastructure are not limited by geographic boundaries. The cloud computing systems provide these services to their clients through a single interface thus making it very difficult to locate the data of different users on the physical storage at the cloud server end.
+	\end{itemize}
+All the above-mentioned problems make it absolutely necessary to develop an efficient healing system for the cloud computing system.
+% Citation needed for fault.
+\section{Faults}
+Any system that is working perfectly can be susceptible to a large number of faults. Depending on the tasks executed by that system, these faults may take a varied number of forms. The combined effect of these faults is a decrease in the productivity of the system and hence a drop in the system efficiency. In layman terms, the given system no longer functions as it used to before the occurence of the faults in the system. These faults may occur at different levels in the system architecture.
+Furthermore, certain faults can trigger the occurence of subsequent faults and this can be disastrous.
+A fault in a system is thus a malfunction, that leads to a ceratin deviation from the expected behavior of the system. If we consider the case of a system of inter-connected computers, faults may occur due to a large number of factors, including hardware failure, software bugs, software failure and network problems. 
+Three types of faults are observed in a typical distributed system of computers:
+	\begin{itemize}
+		\item Transient faults
+		\item These faults occur once and then disappear. For example, a network message doesn't reach its destination but does when the message is retransmitted after some period of time. 
+		\item Intermittent faults
+		\item Intermittent faults fault that are reoccurring. These are the most irritating of faults and occur mainly due to component failures or improper inter-component operation, like a loose connection.
+		\item Permanent faults
+		\item This type of failure is persistent and it will continue to exist as long as the faulty system component is repaired or even fully replaced in extreme cases. Examples of this fault are disk head crashes, software bugs, and burnt-out power supplies. 
+It is thus essential for any system to incorporate techniques to resolve these faults as quickly and effectively as possible. In general, a fault tolerent system is what is required.
+	\end{itemize}
+\section{Fault Tolerance}
+The basic approach to building fault tolerant systems is redundancy. Redundancy may be applied at several levels. 
+\subsection{Information redundancy}
+Information redundancy is used to provide fault tolerance by replicating or coding the data. For example, a Hamming code is used to provide extra bits in the data in order to recover a certain ratio of failed bits. Other important samples used to provide information redundancy are parity memory, ECC (Error Correcting Codes) memory and ECC codes on data blocks.
+\subsection{Time redundancy}
+Time redundancy achieves fault tolerance by performing an operation several times. Retransmissions in a reliable point-to-point and the use of timeouts along with group communication are examples of time redundancy. This form of redundancy is extensively useful in the presence of transient or intermittent faults. It is of no use with permanent faults. An example is the retransmission of TCP/TP packets. 
+\subsection{Physical redundancy}
+Physical redundancy deals with devices rather than data. Extra equipment is added to enable the system to tolerate the loss of some failed components. RAID disks and backup name servers are examples of physical redundancy. 
+There are many challenges with regard to the implementation of fault tolerant architecute for any distributed system or autonomic computing system. Some of these challenges are:
+	\begin{itemize}
+		\item Implementation of autonomic fault tolerance techniques is required for multiple instances of any application that is running on the several virtual machines which are provided via the cloud computing infrastructure.
+		\item Fault tolerant techniques must be developed which are integrated with the existing workflow scheduling algorithms that have been implemented for the underlying autonomic system.
+		\item It is important that a great level of reliability and availability of multiple cloud computing providers with independent software stacks be ensured. 
+		\item Autonomic fault tolerant methods must react in accurate synchronization among the various interacting clouds, otherwise the solution itself can lead to future faults in the system.
+It is quite obvious that the techniques that can be developed for automatic fault tolerance are accompanied by a large number of limitations. In the foresight of various users(clients) registered with a cloud, requesting services, it is thus a great ordeal to ensure efficient provision of services without error. We cannot rely on fault tolerant mechanisms regardless of them being automatic.
+	\end{itemize}
+It is extremely difficult to synchronise fault repairs amongst the various inter-connected nodes of our autonomic cloud computing system, thus manual intervention in the healing process must be kept to a minimal level. Apart from synchronization, many other aspects must also be considered, including automatic and accurate load balancing in the unfortunate case of a the failure of a node or any component of the cloud server. It is this that has led to the growing demand for an autonomic cloud computing system that is capable of “self-healing”, keeping in mind that the system is not completely fault tolerant and impervious to faults.
+\section{Need for Prediction}
+The Cloud Computing environment is distributed over geographical locations. Also, inheritant in the definition of Cloud Computing, is the notion of leasing resources to third parties. The Cloud service provider needs to ensure uninterrupted and failure proof serivce. Thus the distributed nature and service liabilities entail a robust system which is reliable and requires minimum human intervention. One of the most fundamental and essential features that must be incorporated to achieve these goals is failure prediction. Failure prediction is an ensemble of various analytical techniques which work together closely to predict failures and thus trigger healing action.
+\section{Self-Healing}
+Ever since development of modern computers it has become very difficult to rectify the system faults and manage recovery from malicious attacks due to the increase in complexity of the systems. All these factors resulted in the study in the field of autonomic computing and have explored the concept of self-healing systems. Autonomic computing is a self-managing computing model named after, and patterned on, the human body's autonomic nervous system. Self-healing in autonomous computing is described as the process to to free people from discovering, recovering, and failures.  Self-healing systems are expected to heal themselves at runtime in response to any change in environment or operational circumstances. Thus, the goal of self-healing is to prevent disastrous failure through prompt execution of certain proposed actions. We need a self-healing mechanism which is expected to monitor, diagnose, recover from faults and regain normative performance levels independently. The Self-healing technology enhances the system reliability by removing the need for human operation, as human configuration and maintenance of complicated systems makes the system more vulnerable to errors.  Conventional ways to eliminate these errors would include log-based level, model-based level, and component-based level approaches. These approaches do support some parts of the self-healing process but not whole process which includes monitoring, filtering, translation, analysis, diagnosis, decision and healing.
+%_____________________________________________________________________________________________

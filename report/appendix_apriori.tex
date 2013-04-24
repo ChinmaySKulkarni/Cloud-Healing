@@ -1,0 +1,42 @@
+\chapter{Association Rule Learning}
+In data mining, association rule learning is used for discovering interesting relations between variables in large databases. It is intended to identify strong rules discovered in databases using different measures of interestingness. 
+
+The problem of association rule mining is defined as:\\
+Let \begin{math}I=\{i_1, i_2,\ldots,i_n\}\end{math} be a set of \begin{math}n\end{math} binary attributes called ``items". Let \begin{math}D = \{t_1, t_2, \ldots, t_m\}\end{math} be a set of transactions called the ``database". Each transaction in \begin{math}D\end{math} has a unique transaction ID and contains a subset of the items in \begin{math}I\end{math}. A ``rule" is defined as an implication of the form \begin{math}X \Rightarrow Y\end{math} where \begin{math}X, Y \subseteq I\end{math} and \begin{math}X \cap Y = \emptyset\end{math}. The sets of items (for short ``itemsets") \begin{math}X\end{math} and \begin{math}Y\end{math} are called ``antecedent" (left-hand-side or LHS) and ``consequent" (right-hand-side or RHS) of the rule respectively.
+
+\section{Useful Terms}
+To select interesting rules from the set of all possible rules, constraints on various measures of significance and interest can be used. The best-known constraints are minimum thresholds on support and confidence.
+	\begin{itemize}
+		\item The ``support" \begin{math}\mathrm{supp}(X)\end{math} of an itemset \begin{math}X\end{math} is defined as the proportion of transactions in the data set which contain the itemset. 
+		\item The ``confidence" of a rule is defined \begin{math}\mathrm{conf}(X\Rightarrow Y) = \mathrm{supp}(X \cup Y) / \mathrm{supp}(X)\end{math}. Here supp(X∪Y) means ``support for occurrences of transactions where `X and Y both' appear", not ``support for occurrences of transactions where `either X or Y appears'". Therefore, confidence is an estimate of the probability \begin{math}P(Y|X)\end{math}, the probability of finding the RHS of the rule in transactions under the condition that these transactions also contain the LHS.
+		\item The ``lift" of a rule is defined as \begin{math} \mathrm{lift}(X\Rightarrow Y) = \frac{ \mathrm{supp}(X \cup Y)}{ \mathrm{supp}(X) \times \mathrm{supp}(Y) } \end{math} or the ratio of the observed support to that expected if X and Y were independent. 
+		\item The ``conviction" of a rule is defined as \begin{math} \mathrm{conv}(X\Rightarrow Y) =\frac{ 1 - \mathrm{supp}(Y) }{ 1 - \mathrm{conf}(X\Rightarrow Y)}\end{math}. Thus, conviction can be interpreted as the ratio of the expected frequency that X occurs without Y (that is to say, the frequency that the rule makes an incorrect prediction) if X and Y were independent divided by the observed frequency of incorrect predictions.
+	\end{itemize}
+Association rules are usually required to satisfy a user-specified minimum support and a user-specified minimum confidence at the same time. Association rule generation is composed of two steps:
+	\begin{enumerate}
+		\item First, minimum support is applied to find all frequent itemsets in a database. 
+		\item Second, these frequent itemsets and the minimum confidence constraint are used to form rules.
+	\end{enumerate}
+Apriori is the most efficient algorithm to mine association rules. It uses a breadth-first search strategy to count the support of itemsets and uses a candidate generation function to generate association rules.
+\section{Apriori Algorithm for Association Rule Learning}
+Apriori is an algorithm for frequent itemset mining. The Apriori Algorithm is used mainly for association rule learning over transactional databases. It proceeds by identifying the frequent individual items in the database and extending them to larger and larger item sets as long as those item sets appear sufficiently often in the database. The frequent item sets determined by Apriori can be used to determine association rules which highlight general trends in the database.
+
+Apriori is designed to operate on databases containing transactions. Each transaction is seen as a set of items, which is called an ``itemset". Given a threshold \begin{math}C\end{math}, the Apriori algorithm identifies the itemsets which are subsets of at least \begin{math}C\end{math} transactions in the database. 
+
+In the Candidate Generation  Phase, the Apriori Algorithm uses a ``bottom up" approach, where frequent subsets are extended one item at a time, and groups of candidates are tested against the data. The algorithm terminates when no further successful extensions are found.
+It generates candidate item sets of length \begin{math}k\end{math} from item sets of length \begin{math}k-1\end{math}.  Then it prunes the candidates which have an infrequent sub-pattern. Thus, the candidate set contains all frequent \begin{math}k\end{math}-length item sets. After that, it scans the transaction database to determine frequent item sets among the candidates.  
+
+The pseudocode for the algorithm is given below for a transaction database \begin{math}T\end{math}, and a support threshold of \begin{math}\epsilon\end{math}. \begin{math}T\end{math} is a multiset and \begin{math}C_k\end{math} is the candidate set for level \begin{math}k\end{math}.  Generate() algorithm is assumed to generate the candidate sets from the large itemsets of the preceding level.
+
+\indent \begin{math}\mathrm{Apriori}(T,\epsilon)\end{math}\\
+\indent\indent \begin{math}L_1 \gets \{ \mathrm{large~1-itemsets} \} \end{math}\\
+\indent\indent \begin{math}k \gets 2\end{math}\\
+\indent\indent\indent \begin{math}\mathrm{\textbf{while}}~ L_{k-1} \neq \emptyset \end{math}\\
+\indent\indent\indent\indent \begin{math}C_k \gets \{ c |c = a \cup \{b\}  \land  a \in L_{k-1} \land b \in \bigcup L_{k-1} \land b \not \in  a  \}\end{math}\\
+\indent\indent\indent\indent \begin{math}\mathrm{\textbf{for}~transactions}~t \in T\end{math}\\
+\indent\indent\indent\indent\indent \begin{math}C_t \gets \{ c | c \in C_k \land c \subseteq t \} \end{math}\\
+\indent\indent\indent\indent\indent \begin{math}\mathrm{\textbf{for}~candidates}~c \in C_t\end{math}\\
+\indent\indent\indent\indent\indent\indent \begin{math}count[c] \gets count[c]+1\end{math}\\
+\indent\indent\indent\indent \begin{math}L_k \gets \{ c |c \in C_k \land ~ count[c] \geq \epsilon \}\end{math}\\
+\indent\indent\indent\indent \begin{math}k \gets k+1\end{math}\\
+\indent\indent\indent \begin{math}\mathrm{\textbf{return}}~\bigcup_k L_k\end{math}\\
