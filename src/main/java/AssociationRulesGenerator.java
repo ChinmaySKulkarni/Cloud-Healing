@@ -10,11 +10,11 @@ import java.io.*;
 import java.util.*;
 import weka.core.*;
 
-import weka.associations.*;
-import weka.associations.Apriori.*;
+import weka.associations.AssociationRules;
+import weka.associations.Apriori;
 import weka.core.converters.ConverterUtils;
 
-public class AssociationRules {
+public class AssociationRulesGenerator {
 
     private Apriori     apriori              = null;
     // apriori specific parameters
@@ -33,45 +33,36 @@ public class AssociationRules {
         Instances   instances       = null;
         String filename  =  args[0];
         String[] name = filename.split("\\.");
-        String resultFile = name[0] + "_rules_apriori.txt";
+        String resultFile = name[0] + "_rules_apriori.ser";
         ConverterUtils.DataSource source = null;
         try {
             source = new ConverterUtils.DataSource(filename);
-        } catch (Exception e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-
-        try {
             instances = source.getDataSet();
         } catch (Exception e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
         // Make the last attribute be the class
         instances.setClassIndex(instances.numAttributes() - 1);
 
-        AssociationRules associationRules = new AssociationRules();
+        AssociationRulesGenerator associationRulesGenerator = new AssociationRulesGenerator();
+        AssociationRules rules = associationRulesGenerator.associate(instances);
 
         //System.out.println(associationRules.associate(instances));
         BufferedWriter out = null;
         try {
-            out = new BufferedWriter(new FileWriter(resultFile));
-        } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-        try {
-            out.write(associationRules.associate(instances).toString());
-        } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-        try {
-            out.flush();
-        } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-        try {
-            out.close();
-        } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            FileOutputStream fout = new FileOutputStream(resultFile);
+            ObjectOutputStream oos = new ObjectOutputStream(fout);
+            oos.writeObject(rules);
+            } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
 
 
@@ -82,9 +73,9 @@ public class AssociationRules {
     // constructor
     //
 
-    AssociationRules() { }
+    AssociationRulesGenerator() { }
 
-    public StringBuffer associate(Instances instances ) {
+    public AssociationRules associate(Instances instances) {
         return(associate(instances,deltaValue, lowerBoundMinSupportValue, minMetricValue,
                 numRulesValue, significanceLevelValue, upperBoundMinSupportValue,tagId));
     }
@@ -92,7 +83,7 @@ public class AssociationRules {
     //
     // the main association method
     //
-    public StringBuffer associate(Instances instances, double deltaValue, double lowerBoundMinSupportValue, double minMetricValue, int numRulesValue, double significanceLevelValue, double upperBoundMinSupportValue, int tagId) {
+    public AssociationRules associate(Instances instances, double deltaValue, double lowerBoundMinSupportValue, double minMetricValue, int numRulesValue, double significanceLevelValue, double upperBoundMinSupportValue, int tagId) {
 
         StringBuffer result = new StringBuffer();
 
@@ -120,18 +111,21 @@ public class AssociationRules {
             apriori.setMinMetric(minMetricValue);
             apriori.setNumRules(numRulesValue);
             apriori.setUpperBoundMinSupport(upperBoundMinSupportValue);
-
+            apriori.setRemoveAllMissingCols(true);
             apriori.buildAssociations(instances);
             result.append(apriori.toString() + "\n");
-
+            return apriori.getAssociationRules();
 
         } catch (Exception e) {
             e.printStackTrace();
             result.append("\nException (sorry!):\n" + e.toString());
+        } finally {
+            System.out.println(result);
         }
 
-        return result;
+        //return result;
 
+        return null;
     } // end associate
 
     public void setNumRules(int numRulesValue) {
