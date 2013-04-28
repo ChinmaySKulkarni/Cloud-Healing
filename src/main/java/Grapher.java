@@ -1,9 +1,9 @@
 /**
  * Created with IntelliJ IDEA.
  * User: ameyamore
- * Date: 25/04/13
- * Time: 7:00 PM
+ * Date: 28/04/13
+ * Time: 8:51 PM
  * To change this template use File | Settings | File Templates.
  */
-public class predictor {
+public class Grapher {
 }
