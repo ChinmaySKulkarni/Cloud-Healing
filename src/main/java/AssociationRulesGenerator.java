@@ -1,11 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * User: chinmay
- * Date: 21/4/13
- * Time: 7:16 PM
- * To change this template use File | Settings | File Templates.
- */
-
 import java.io.*;
 import java.util.*;
 import weka.core.*;
@@ -16,54 +8,25 @@ import weka.core.converters.ConverterUtils;
 
 public class AssociationRulesGenerator {
 
+    private final String filename;
     private Apriori     apriori              = null;
     // apriori specific parameters
     private double deltaValue                = 0.05;
     private double lowerBoundMinSupportValue =  0.01;
     private int tagId                        =  0;  //Confidence
     // String  metricType: Confidence, Lift, Leverage, Conviction
-    private double minMetricValue            = 0.1;
+    private double minMetricValue; //Confidence - Chinmay
     private int numRulesValue                = 9999999;
     private double significanceLevelValue    = -1.0; // (??)
     private double upperBoundMinSupportValue = 1.0;
 
 
     public static void main(String args[]) {
-
-        Instances   instances       = null;
+        System.out.println("Generating rules...");
         String filename  =  args[0];
-        String[] name = filename.split("\\.");
-        String resultFile = name[0] + "_rules_apriori.ser";
-        ConverterUtils.DataSource source = null;
-        try {
-            source = new ConverterUtils.DataSource(filename);
-            instances = source.getDataSet();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        // Make the last attribute be the class
-        instances.setClassIndex(instances.numAttributes() - 1);
-
-        AssociationRulesGenerator associationRulesGenerator = new AssociationRulesGenerator();
-        AssociationRules rules = associationRulesGenerator.associate(instances);
-
-        //System.out.println(associationRules.associate(instances));
-        BufferedWriter out = null;
-        try {
-            FileOutputStream fout = new FileOutputStream(resultFile);
-            ObjectOutputStream oos = new ObjectOutputStream(fout);
-            oos.writeObject(rules);
-            } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (out != null) {
-                try {
-                    out.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
+        Double confidence = Double.parseDouble(args[1]);
+        AssociationRulesGenerator associationRulesGenerator = new AssociationRulesGenerator(filename, confidence);
+        associationRulesGenerator.run();
 
 
     } // end main
@@ -73,7 +36,10 @@ public class AssociationRulesGenerator {
     // constructor
     //
 
-    AssociationRulesGenerator() { }
+    AssociationRulesGenerator(String filename, double confidence) {
+        this.filename = filename;
+        this.minMetricValue = confidence;
+    }
 
     public AssociationRules associate(Instances instances) {
         return(associate(instances,deltaValue, lowerBoundMinSupportValue, minMetricValue,
@@ -130,5 +96,43 @@ public class AssociationRulesGenerator {
 
     public void setNumRules(int numRulesValue) {
         this.numRulesValue = numRulesValue;
+    }
+
+    public void run() {
+        Instances   instances       = null;
+
+        String[] name = filename.split("\\.");
+        String resultFile;
+        ConverterUtils.DataSource source = null;
+        try {
+            source = new ConverterUtils.DataSource(filename);
+            instances = source.getDataSet();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        // Make the last attribute be the class
+        instances.setClassIndex(instances.numAttributes() - 1);
+
+
+        AssociationRules rules = associate(instances);
+
+        //System.out.println(associationRules.associate(instances));
+        FileOutputStream fout = null;
+        try {
+            resultFile = name[0] + "_" + minMetricValue + "-rules_apriori.ser";
+            fout = new FileOutputStream(resultFile);
+            ObjectOutputStream oos = new ObjectOutputStream(fout);
+            oos.writeObject(rules);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fout != null) {
+                try {
+                    fout.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }
