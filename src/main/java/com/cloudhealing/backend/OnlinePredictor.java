@@ -175,7 +175,10 @@ public class OnlinePredictor {
 
     public void predict(String node, long time, String entry_data) {
         addToWLists(node, time, entry_data);
-        runPredictor(node, time, entry_data);
+        if (runPredictor(node, time, entry_data)) {
+            Healer healer = new Healer();
+            healer.heal(node);
+        }
         if (entry_data.contains("Failure")) {
             //System.out.println("+");
             recordFailure(node, time, entry_data);
@@ -184,6 +187,7 @@ public class OnlinePredictor {
 
     private boolean runPredictor(String node, long time, String entry_data) {
         Set<String> failuresTriggered = eList.get(entry_data);
+        boolean isFailure = false;
         if (failuresTriggered != null) {
             Set<String> currentWList = wLists.get(node).keySet();
             for (String failure : failuresTriggered) {
@@ -193,13 +197,14 @@ public class OnlinePredictor {
                         raiseWarning(node, time, failure);
                         //System.out.print(".");
                         //return true;
+                        isFailure = true;
                         continue;
                     }
                 }
 
             }
         }
-        return false;
+        return isFailure;
     }
 
     private void addToFailureLists(Map<String, Map<String, List<Long>>> failureList, String node, long time, String failure) {

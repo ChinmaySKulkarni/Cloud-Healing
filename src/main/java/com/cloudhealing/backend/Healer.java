@@ -8,4 +8,7 @@ package com.cloudhealing.backend;
  * To change this template use File | Settings | File Templates.
  */
 public class Healer {
+    public void heal(String node) {
+        APICaller apicaller = new APICaller();
+    }
 }
