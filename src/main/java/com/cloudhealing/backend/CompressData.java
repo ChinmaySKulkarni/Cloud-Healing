@@ -1,3 +1,5 @@
+package com.cloudhealing.backend;
+
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.BufferedReader;

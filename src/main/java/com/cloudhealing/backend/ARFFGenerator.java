@@ -1,8 +1,8 @@
+package com.cloudhealing.backend;
+
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.LinkedHashMap;
 
 public class ARFFGenerator {

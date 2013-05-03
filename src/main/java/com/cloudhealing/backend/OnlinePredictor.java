@@ -1,4 +1,5 @@
-import org.apache.commons.lang3.StringUtils;
+package com.cloudhealing.backend;
+
 import weka.associations.AssociationRule;
 import weka.associations.AssociationRules;
 import weka.associations.Item;
@@ -6,7 +7,7 @@ import weka.associations.Item;
 import java.io.*;
 import java.util.*;
 
-public class Predictor {
+public class OnlinePredictor {
     //prepare F list:records list of triggering events for each failure event
     private Map<String, List<Set<String>>> fList;
     private Map<String, Set<String>> eList;
@@ -21,7 +22,7 @@ public class Predictor {
     private String actualFailuresFile;
     private String predictedFailuresFile;
 
-    public Predictor(String rulesFile, String actualFailuresFile, String predictedFailuresFile) {
+    public OnlinePredictor(String rulesFile, String actualFailuresFile, String predictedFailuresFile) {
         fList = new HashMap<String, List<Set<String>>>();
         eList = new HashMap<String, Set<String>>();
         wLists = new HashMap<String, Map<String, List<Long>>>();
@@ -244,7 +245,7 @@ public class Predictor {
         String rulesFile = args[0];
         String actualFailuresFile = args[1];
         String predictedFailuresFile = args[2];
-        Predictor predictor = new Predictor(rulesFile, actualFailuresFile, predictedFailuresFile);
+        OnlinePredictor predictor = new OnlinePredictor(rulesFile, actualFailuresFile, predictedFailuresFile);
         predictor.predict();
         /*
         HashSet<String> superSet = new HashSet<String>();
@@ -256,50 +257,5 @@ public class Predictor {
         subSet.add("B");
         System.out.println("Result: " + superSet.containsAll(subSet));
         */
-    }
-}
-class Row {
-
-    String node;
-    String entry_data;
-    long time;
-    private static int timeIndex = 5;
-    private static int nodeIndex = 6;
-    private static int entry_dataIndex = 10;
-
-    public static Row generate(String row) {
-        String rowItem[] = row.split(",");
-        //System.out.println(StringUtils.join(rowItem, "|"));
-        return new Row(rowItem[nodeIndex], rowItem[entry_dataIndex], Long.parseLong(rowItem[timeIndex]));
-    }
-
-    Row(String node, String entry_data, long time) {
-        this.node = node;
-        this.entry_data = entry_data;
-        this.time = time;
-    }
-
-    String getNode() {
-        return node;
-    }
-
-    void setNode(String node) {
-        this.node = node;
-    }
-
-    String getEntry_data() {
-        return entry_data;
-    }
-
-    void setEntry_data(String entry_data) {
-        this.entry_data = entry_data;
-    }
-
-    long getTime() {
-        return time;
-    }
-
-    void setTime(long time) {
-        this.time = time;
     }
 }
