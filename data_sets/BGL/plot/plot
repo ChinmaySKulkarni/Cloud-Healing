@@ -1,0 +1,5 @@
+set term post eps enh "Helvetica" 24
+set output "actualFailures.eps"
+splot "actualFailures.plot" using 1:2:3
+set output "predictedFailures.eps"
+splot "predictedFailures.plot" using 1:2:3
