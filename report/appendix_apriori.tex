@@ -19,12 +19,12 @@ Association rules are usually required to satisfy a user-specified minimum suppo
 	\end{enumerate}
 Apriori is the most efficient algorithm to mine association rules. It uses a breadth-first search strategy to count the support of itemsets and uses a candidate generation function to generate association rules.
 \section{Apriori Algorithm for Association Rule Learning}
-Apriori is an algorithm for frequent itemset mining. The Apriori Algorithm is used mainly for association rule learning over transactional databases. It proceeds by identifying the frequent individual items in the database and extending them to larger and larger item sets as long as those item sets appear sufficiently often in the database. The frequent item sets determined by Apriori can be used to determine association rules which highlight general trends in the database.
+Apriori is an algorithm for frequent itemset mining. The Apriori Algorithm is used mainly for association rule learning over transactional databases. It proceeds by identifying the frequent individual items in the database and extending them to larger and larger item sets as long as those item sets appear sufficiently often in the database. The frequent item sets determined by Apriori can be used to determine association rules that highlight general trends in the database.
 
 Apriori is designed to operate on databases containing transactions. Each transaction is seen as a set of items, which is called an ``itemset". Given a threshold \begin{math}C\end{math}, the Apriori algorithm identifies the itemsets which are subsets of at least \begin{math}C\end{math} transactions in the database. 
 
-In the Candidate Generation  Phase, the Apriori Algorithm uses a ``bottom up" approach, where frequent subsets are extended one item at a time, and groups of candidates are tested against the data. The algorithm terminates when no further successful extensions are found.
-It generates candidate item sets of length \begin{math}k\end{math} from item sets of length \begin{math}k-1\end{math}.  Then it prunes the candidates which have an infrequent sub-pattern. Thus, the candidate set contains all frequent \begin{math}k\end{math}-length item sets. After that, it scans the transaction database to determine frequent item sets among the candidates.  
+In the Candidate Generation Phase, the Apriori Algorithm uses a ``bottom up" approach, where frequent subsets are extended one item at a time, and groups of candidates are tested against the data. The algorithm terminates when no further successful extensions are found.
+It generates candidate item sets of length \begin{math}k\end{math} from item sets of length \begin{math}k-1\end{math}.  Then it prunes the candidates that have an infrequent sub-pattern. Thus, the candidate set contains all frequent \begin{math}k\end{math}-length item sets. After that, it scans the transaction database to determine frequent item sets among the candidates.  
 
 The pseudocode for the algorithm is given below for a transaction database \begin{math}T\end{math}, and a support threshold of \begin{math}\epsilon\end{math}. \begin{math}T\end{math} is a multiset and \begin{math}C_k\end{math} is the candidate set for level \begin{math}k\end{math}.  Generate() algorithm is assumed to generate the candidate sets from the large itemsets of the preceding level.
 
@@ -40,3 +40,4 @@ The pseudocode for the algorithm is given below for a transaction database \begi
 \indent\indent\indent\indent \begin{math}L_k \gets \{ c |c \in C_k \land ~ count[c] \geq \epsilon \}\end{math}\\
 \indent\indent\indent\indent \begin{math}k \gets k+1\end{math}\\
 \indent\indent\indent \begin{math}\mathrm{\textbf{return}}~\bigcup_k L_k\end{math}\\
+

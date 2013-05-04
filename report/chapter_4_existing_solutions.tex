@@ -44,7 +44,7 @@ The Error Mitigation System is the core of the entire architecture. It houses a 
 % Add Citation
 \section{System and Method for Achieving Autonomic Computing Self Healing Utilizing Meta Level Reflection and Reasoning}
 \textbf{Patent number:}  7260743\cite{FELLENSTEIN:2007}\\
-In a base level a monitor detects an error in a production environment and provides reification message comprising data about the error to a meta level. A reasoning system in the meta level receives the reification message and analyzes the data using knowledge of computational components in the base level and identifies a self healing action for the error and returns a reversion message comprising a signal to implement the self healing action. Responsive to receiving the signal the base level implements the self healing action.
+In a base level a monitor detects an error in a production environment and provides reification message comprising data about the error to a meta level. A reasoning system in the meta level receives the reification message and analyzes the data using knowledge of computational components in the base level and identifies a self healing action for the error and returns a reversion message comprising a signal to implement the self healing action. Responsive to receiving the signal the base level implements the self-healing action.
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics{figures/patent3.eps} 
@@ -64,7 +64,7 @@ In a base level a monitor detects an error in a production environment and provi
 {Action Recommendation Logic} & {Learning based on creating models and mapping them to ontology includes semantic processing, dependency processing and action determination. } & {Static rules based. Uses Lookup table to map fault to strategy. Also has alternate configuration in case the basic strategy fails and a retry module. Strategy Optimisation is proposed not implemented.} & {Uses a reasoning system. Job is divided into two parts - detection (base level) and action recommendation (meta level). Transparency provided because of meta level.}\\ \hline
 {Architecture specific requirements} & {Sensors} & {Error Mitigation System} & {Reasoning Expert System}\\ \hline
 {Transparency} & {No} & {No} & {Yes- Multilevel}\\ \hline
-{Feasibility} & {Excessive use of sensors. Too much of information collected, requires comparable hardware to process so much information.} & {Uses a specific processor which executes a code block and needs to interact with error mitigation system. Too much message passing} & {Meta level is idle most of the time. Less messages passed. Base level only sends messages when error is detected. Strategy can be easily decided and changed without modifications to the base level.}\\ \hline
+{Feasibility} & {Excessive use of sensors. Too much of information collected, requires comparable hardware to process so much information.} & {Uses a specific processor that executes a code block and needs to interact with error mitigation system. Too much message passing} & {Meta level is idle most of the time. Fewer messages passed. Base level only sends messages when error is detected. Strategy can be easily decided and changed without modifications to the base level.}\\ \hline
 {Dynamic Learning} & {Yes} & {No} & {Possible}\\ \hline
 \caption{Comparison of the various approaches}
 \end{longtable}
@@ -73,3 +73,4 @@ In a base level a monitor detects an error in a production environment and provi
 \end{center}
 %\end{table}
 %_____________________________________________________________________________________________ 
+

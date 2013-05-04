@@ -9,7 +9,7 @@ The advent of computers kicked off a race for development of a unified computing
 \section{Cloud Computing}
 Cloud computing is a framework that revolves around the concept of providing services such as network storage and computational capabilities. One of the major motivations behind the development of cloud computing was to provide the above mentioned capabilities without the need to physically possess the resources. This is important as it makes available the resources even to individuals that may not possess the strength to set up the infrastructure needed to deliver such a computational environment. Users could thus avail services on subscription through service providers such as Google, Amazon etc.
 
-Services provided by the cloud need not be only of the form of software servers, rather individuals could subscribe to an entire computing infrastructure. We illustrate further, the different services provided by the cloud computing environment.
+Services provided by the cloud need not be only of the form of software servers, rather individuals could subscribe to an entire computing infrastructure. We illustrate further, the different services provided by the cloud-computing environment.
 \subsection{Infrastructure as a Service}
 Infrastructure as a Service aims at outsourcing hardware resources such as computational power, network and storage. This means that an individual can access the hardware resources as his own but it is the service provider who assumes the responsibility of setting up, maintaining and housing it. Some of the major Infrastructures available for subscription are
 	\begin{itemize}
@@ -20,7 +20,7 @@ Infrastructure as a Service aims at outsourcing hardware resources such as compu
 	\end{itemize}
 It should be noted that though all these infrastructural facilities are provided to the user as a whole, they might be distributed over various areas, even geographically separated.
 \subsection{Platform as a Service}
-Platform as a Service is a service model which provides a solution stack as a service. The service provider provides an individual a set of tools to develop and deploy software. PaaS allows individuals to build multi-tenant applications that can be concurrently accessed by a lot of users. PaaS provides subscription for
+Platform as a Service is a service model that provides a solution stack as a service. The service provider provides an individual a set of tools to develop and deploy software. PaaS allows individuals to build multi-tenant applications that can be concurrently accessed by a lot of users. PaaS provides subscription for
 	\begin{itemize}
 		\item Execution Runtime
 		\item Database
@@ -40,14 +40,15 @@ Software as a Service allows the software and its data to be placed on a remote 
 	\end{itemize}
 
 \section{Motivation}
-There is an ever-increasing demand for large-scale cloud computing systems with tens to hundreds of thousands of computing nodes that are being designed and deployed. The large scale of cloud computing environments, combined with theever-growing system complexity, has made reliability a tremendous challenge. Component reliability becomes more difficult with the increasing complexity of the cloud components as well as growing system size.\cite{FAILURE_3} In order to improve component reliability, considerable research has been done to make cloud computing architectures resilient to faults and to make their applications more robust. The main aim is to create a self-healing cloud architecture which can efficiently detect failures in the system and take the corrective action based on meta-learning techniques.
+There is an ever-increasing demand for large-scale cloud computing systems with tens to hundreds of thousands of computing nodes that are being designed and deployed. The large scale of cloud computing environments, combined with the ever-growing system complexity, has made reliability a tremendous challenge. Component reliability becomes more difficult with the increasing complexity of the cloud components as well as growing system size.\cite{FAILURE_3} In order to improve component reliability, considerable research has been done to make cloud computing architectures resilient to faults and to make their applications more robust. The main aim is to create a self-healing cloud architecture that can efficiently detect failures in the system and take the corrective action based on meta-learning techniques.
 
 \section{Main Contribution}
-In this study, we propose a dynamic meta-learning architecture which can detect possible failures in the cloud computing system. These failures are detected with a reasonable prediction accuracy on the basis of failure logs over a large period of time. The architecture consists of two basic parts to predict and take corrective action:
+In this study, we propose a dynamic meta-learning architecture that can detect possible failures in the cloud computing system. These failures are detected with reasonable prediction accuracy on the basis of failure logs over a large period of time. The architecture consists of two basic parts to predict and take corrective action:
 	\begin{itemize}
-		\item Part one preprocesses and analyzes system event logs. The preprocessed (scrubbed) data is analyzed by means of association rule based machine learning to examine interesting events which may possibly lead to faults. The machine learning techniques are also used to identify failure patterns amongst the different cloud components.
+		\item Part one preprocesses and analyzes system event logs. The preprocessed (scrubbed) data is analyzed by means of association rule based machine learning to examine interesting events that may possibly lead to faults. The machine learning techniques are also used to identify failure patterns amongst the different cloud components.
 		\item Part two uses the rules generated by the first part in order to carry out the corrective action and hence prevent failure. This may be done by means of migrating virtual machines running on computing nodes that are predicted to fail to another computing node.
 	\end{itemize}
 %These two parts, along with their main components, are illustrated in (*******FIG NUMBER*******). The details of the main components will be described in (****Section no.****).
 % Insert cross reference to figure number and section.
 %_____________________________________________________________________________________________ 
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2013.4.19)  20 APR 2013 01:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2013.4.19)  4 MAY 2013 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -86,6 +86,64 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count92
 \LT@p@ftn=\toks15
 )
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count93
+
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+
+! LaTeX Error: File `relsize.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip47
+\skiplinenumber=\skip48
+\skiprule=\skip49
+\skiphlne=\skip50
+\skiptext=\skip51
+\skiplength=\skip52
+\algomargin=\skip53
+\skipalgocfslide=\skip54
+\algowidth=\dimen108
+\inoutsize=\dimen109
+\inoutindent=\dimen110
+\interspacetitleruled=\dimen111
+\interspacealgoruled=\dimen112
+\interspacetitleboxruled=\dimen113
+\algocf@inoutbox=\box30
+\algocf@inputbox=\box31
+\AlCapSkip=\skip55
+\AlCapHSkip=\skip56
+\algoskipindent=\skip57
+\algocf@nlbox=\box32
+\algocf@hangingbox=\box33
+\algocf@untilbox=\box34
+\algocf@skipuntil=\skip58
+\algocf@capbox=\box35
+\algoheightruledefault=\skip59
+\algoheightrule=\skip60
+\algotitleheightruledefault=\skip61
+\algotitleheightrule=\skip62
+\c@algocfline=\count94
+\c@algocfproc=\count95
+\c@algocf=\count96
+\algocf@algoframe=\box36
+\algocf@algobox=\box37
+)
 
 LaTeX Warning: Unused global option(s):
     [14pt].
@@ -94,21 +152,27 @@ LaTeX Warning: Unused global option(s):
 
 LaTeX Warning: Label `fig:Label7' multiply defined.
 
+
+LaTeX Warning: Label `fig:Label7' multiply defined.
+
+
+LaTeX Warning: Label `fig:Label7' multiply defined.
+
 )
 \openout1 = `coep_compit_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
  (./titlepage.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 15.
@@ -130,9 +194,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 4.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
  [1
 
 ] [2])
@@ -169,29 +230,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Chapter 2.
 [5
 
-]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
- [6]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-) (./chapter_3_healing.tex [7]
+] [6]) (./chapter_3_healing.tex [7]
 Chapter 3.
-Missing character: There is no ‚ in font cmbx12!
-Missing character: There is no Ä in font cmbx12!
-Missing character: There is no ì in font cmbx12!
 [8
 
-] [9] [10] [11]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-) (./chapter_4_existing_solutions.tex [12] [13]
+] [9] [10] [11] [12]) (./chapter_4_existing_solutions.tex [13]
 Chapter 4.
 File: figures/patent1_1.eps Graphic file (type eps)
 <figures/patent1_1.eps>
@@ -294,8 +337,23 @@ Underfull \hbox (badness 1259) in paragraph at lines 67--67
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 67--67
-\OT1/cmr/m/n/9 which ex-e-cutes a code
+Underfull \hbox (badness 3364) in paragraph at lines 67--67
+\OT1/cmr/m/n/9 of the time. Fewer
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 67--67
+\OT1/cmr/m/n/9 level only sends mes-
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 67--67
+\OT1/cmr/m/n/9 tected. Strat-egy can
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 67--67
+\OT1/cmr/m/n/9 be eas-ily de-cided and
  []
 
 
@@ -315,12 +373,21 @@ File: figures/cloud_architecture.eps Graphic file (type eps)
 File: figures/failure_prediction_scheme.eps Graphic file (type eps)
 
 <figures/failure_prediction_scheme.eps> [23]
-File: figures/temporal_correlation.eps Graphic file (type eps)
+File: figures/histogram_unfiltered.eps Graphic file (type eps)
 
-<figures/temporal_correlation.eps> [24]
-File: figures/prediction_algorithm.eps Graphic file (type eps)
- <figures/prediction_algorithm.eps>)
-[25] (./appendix_blue_gene.tex [26]
+<figures/histogram_unfiltered.eps>
+File: figures/histogram_filtered.eps Graphic file (type eps)
+ <figures/histogram_filtered.eps> [24]
+Overfull \hbox (15.0pt too wide) detected at line 107
+[][] 
+ []
+
+) (./chapter_7_results.tex [25] [26]
+Chapter 7.
+File: figures/precision.eps Graphic file (type eps)
+<figures/precision.eps>) (./appendix_blue_gene.tex [27
+
+] [28]
 Appendix A.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 10.
@@ -349,9 +416,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--13
 \OT1/cmr/m/n/9 par-ity er-ror cor-
  []
 
-[27
+[29
 
-]) (./appendix_apriori.tex [28]
+]) (./appendix_apriori.tex [30]
 Appendix B.
 
 Overfull \hbox (11.0772pt too wide) in paragraph at lines 4--6
@@ -362,18 +429,18 @@ $\OML/cmm/m/it/12 D \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 t[]; t
 []; [] ; t[]\OMS/cmsy/m/n/12 g$
  []
 
-[29
+[31
 
 ]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no à in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [30])
-Underfull \hbox (badness 10000) in paragraph at lines 31--80
+ [32]
+Underfull \hbox (badness 10000) in paragraph at lines 31--43
 
  []
 
-[31] (./coep_compit_report.bbl [32]
+[33]) (./coep_compit_report.bbl [34]
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 []\OT1/cmr/m/n/12 Data min-ing and ma-chine learn-ing us-ing weka.
  []
@@ -381,20 +448,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no ô in font cmti12!
-[33
+[35
 
-] [34]) [35] (./coep_compit_report.aux)
+] [36]) [37] (./coep_compit_report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 995 strings out of 494579
- 13756 string characters out of 3168597
- 70764 words of memory out of 3000000
- 4196 multiletter control sequences out of 15000+200000
+ 2351 strings out of 494579
+ 32938 string characters out of 3168597
+ 113069 words of memory out of 3000000
+ 5538 multiletter control sequences out of 15000+200000
  12448 words of font info for 41 fonts, out of 3000000 for 9000
  314 hyphenation exceptions out of 8191
- 30i,12n,21p,1557b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,12n,23p,1556b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on coep_compit_report.dvi (43 pages, 88068 bytes).
+Output written on coep_compit_report.dvi (45 pages, 93704 bytes).
