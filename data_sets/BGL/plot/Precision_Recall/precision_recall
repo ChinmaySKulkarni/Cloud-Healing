@@ -1,0 +1,7 @@
+set term post eps enh "Helvetica" 24
+set xrange[1:14]
+set yrange[0.1:1.0]
+set xlabel "Weeks"
+set output "accuracy.eps"
+set key right bottom
+plot "accuracy_0.4" using 1:2 with lines lc rgb "black" title "Precision", "accuracy_0.4" using 1:3 with lines lc rgb "black" lw 4 title "Recall"

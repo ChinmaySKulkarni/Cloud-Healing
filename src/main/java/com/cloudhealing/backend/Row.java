@@ -21,27 +21,27 @@ public class Row {
         this.time = time;
     }
 
-    String getNode() {
+    public String getNode() {
         return node;
     }
 
-    void setNode(String node) {
+    public void setNode(String node) {
         this.node = node;
     }
 
-    String getEntry_data() {
+    public String getEntry_data() {
         return entry_data;
     }
 
-    void setEntry_data(String entry_data) {
+    public void setEntry_data(String entry_data) {
         this.entry_data = entry_data;
     }
 
-    long getTime() {
+    public long getTime() {
         return time;
     }
 
-    void setTime(long time) {
+    public void setTime(long time) {
         this.time = time;
     }
 }

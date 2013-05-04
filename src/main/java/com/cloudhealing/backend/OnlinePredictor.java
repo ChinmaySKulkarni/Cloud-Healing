@@ -173,16 +173,17 @@ public class OnlinePredictor {
         }
     }
 
-    public void predict(String node, long time, String entry_data) {
+    public boolean predict(String node, long time, String entry_data) {
         addToWLists(node, time, entry_data);
+        boolean returnValue = false;
         if (runPredictor(node, time, entry_data)) {
-            Healer healer = new Healer();
-            healer.heal(node);
+            returnValue = true;
         }
         if (entry_data.contains("Failure")) {
             //System.out.println("+");
             recordFailure(node, time, entry_data);
         }
+        return returnValue;
     }
 
     private boolean runPredictor(String node, long time, String entry_data) {
