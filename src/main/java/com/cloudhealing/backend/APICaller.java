@@ -25,7 +25,7 @@ import java.util.List;
 public class APICaller {
 
     private static String sessionKey = null;
-    private static final String HOST_IP = "192.168.1.101";
+    private static final String HOST_IP = "10.1.99.24";
     private static final String consumerSecret = "";
     private static final String consumerKey = "";
     private static OAuthService service = null;
@@ -132,7 +132,7 @@ public class APICaller {
         //APICaller.call("sdf", null);
         //System.out.println(APICaller.getHostID("abhishek-Inspiron-1564"));
         //System.out.println(APICaller.getVMsOnHost("bfb6febb-66b6-492a-9565-94dc0ef62e2e"));
-        migrateAllVMS("abhishek-Inspiron-1564");
+        migrateAllVMS("cloud-admin-server");
 
     }
 
@@ -150,6 +150,11 @@ public class APICaller {
         JSONObject response;
         do {
             response = APICaller.call("queryAsyncJobResult", arguments);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         } while (!response.has("jobresult"));
         return response;
 
@@ -158,6 +163,7 @@ public class APICaller {
         try {
             HashMap<String, String> arguments = new HashMap<String, String>();
             arguments.put("virtualmachineid", vmId);
+            arguments.put("hostid", getHostID("cloud-host-3"));
             JSONObject response = APICaller.call("migrateVirtualMachine", arguments);
             String jobId = response.getString("jobid");
             handleAsync(jobId);

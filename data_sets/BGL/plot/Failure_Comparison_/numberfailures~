@@ -1,0 +1,10 @@
+set term post eps enh "Helvetica" 24
+set xrange[0:203]
+set yrange[0:54000]
+set style fill solid 1.00
+set xlabel "Days"
+set ylabel "Number of Failures"
+set output "histogram_unfiltered.eps"
+plot "Before Filtering" with boxes lc rgb "black"
+set output "histogram_filtered.eps"
+plot "After Filtering" with boxes lc rgb "black"

@@ -1,0 +1,13 @@
+#!/bin/bash           
+
+count=0
+while read line
+do
+  ((count++))
+  echo -e "Sending log. $count secs elapsed..."
+  if [[ "$line" == *Failure* ]]
+  then
+    halt
+  fi
+  sleep 1
+done < log_file

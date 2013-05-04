@@ -10,8 +10,17 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
     <context:component-scan base-package="com.cloudhealing.services" />
+    <context:component-scan base-package="com.cloudhealing.backend" />
 
     <mvc:annotation-driven />
+
+    <bean id="predictor"
+          class="com.cloudhealing.backend.OnlinePredictor">
+        <constructor-arg><value>data_sets/BGL/blue_gene_0.6-rules_apriori.ser</value></constructor-arg>
+        <constructor-arg><value>data_sets/BGL/actualFailures_online.ser</value></constructor-arg>
+        <constructor-arg><value>data_sets/BGL/predictedFailures_online.ser</value></constructor-arg>
+    </bean>
+
 
     <bean
             class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
