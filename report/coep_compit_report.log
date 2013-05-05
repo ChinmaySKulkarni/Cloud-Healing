@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2013.4.19)  4 MAY 2013 21:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2013.4.19)  5 MAY 2013 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -149,6 +149,15 @@ LaTeX Warning: Unused global option(s):
     [14pt].
 
 (./coep_compit_report.aux
+
+LaTeX Warning: Label `fig:Label7' multiply defined.
+
+
+LaTeX Warning: Label `fig:Label7' multiply defined.
+
+
+LaTeX Warning: Label `fig:Label7' multiply defined.
+
 
 LaTeX Warning: Label `fig:Label7' multiply defined.
 
@@ -385,9 +394,26 @@ Overfull \hbox (15.0pt too wide) detected at line 107
 ) (./chapter_7_results.tex [25] [26]
 Chapter 7.
 File: figures/precision.eps Graphic file (type eps)
-<figures/precision.eps>) (./appendix_blue_gene.tex [27
+<figures/precision.eps> [27
 
-] [28]
+]
+File: figures/actualfailures.eps Graphic file (type eps)
+ <figures/actualfailures.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28]
+File: figures/predicted0.4.eps Graphic file (type eps)
+ <figures/predicted0.4.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/predicted0.6.eps Graphic file (type eps)
+<figures/predicted0.6.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./appendix_blue_gene.tex [29] [30]
 Appendix A.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 10.
@@ -416,9 +442,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--13
 \OT1/cmr/m/n/9 par-ity er-ror cor-
  []
 
-[29
+[31
 
-]) (./appendix_apriori.tex [30]
+]) (./appendix_apriori.tex [32]
 Appendix B.
 
 Overfull \hbox (11.0772pt too wide) in paragraph at lines 4--6
@@ -429,18 +455,18 @@ $\OML/cmm/m/it/12 D \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 t[]; t
 []; [] ; t[]\OMS/cmsy/m/n/12 g$
  []
 
-[31
+[33
 
 ]
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ª in font cmr12!
- [32]
+ [34]
 Underfull \hbox (badness 10000) in paragraph at lines 31--43
 
  []
 
-[33]) (./coep_compit_report.bbl [34]
+[35]) (./coep_compit_report.bbl [36]
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 []\OT1/cmr/m/n/12 Data min-ing and ma-chine learn-ing us-ing weka.
  []
@@ -448,20 +474,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
-[35
+[37
 
-] [36]) [37] (./coep_compit_report.aux)
+] [38]) [39] (./coep_compit_report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2351 strings out of 494579
- 32938 string characters out of 3168597
- 113069 words of memory out of 3000000
- 5538 multiletter control sequences out of 15000+200000
+ 2359 strings out of 494579
+ 33092 string characters out of 3168597
+ 114069 words of memory out of 3000000
+ 5543 multiletter control sequences out of 15000+200000
  12448 words of font info for 41 fonts, out of 3000000 for 9000
  314 hyphenation exceptions out of 8191
  30i,12n,23p,1556b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on coep_compit_report.dvi (45 pages, 93704 bytes).
+Output written on coep_compit_report.dvi (47 pages, 96220 bytes).

@@ -51,8 +51,9 @@
 \contentsline {subsection}{\numberline {7.1.1}Precision}{27}
 \contentsline {subsection}{\numberline {7.1.2}Recall}{27}
 \contentsline {subsection}{\numberline {7.1.3}Precision \& Recall}{27}
-\contentsline {chapter}{\numberline {A}Overview of Blue Gene/L System}{29}
-\contentsline {section}{\numberline {A.1}RAS Logs}{30}
-\contentsline {chapter}{\numberline {B}Association Rule Learning}{31}
-\contentsline {section}{\numberline {B.1}Useful Terms}{31}
-\contentsline {section}{\numberline {B.2}Apriori Algorithm for Association Rule Learning}{33}
+\contentsline {subsection}{\numberline {7.1.4}Comparison between Failure Prediction at Various Confidence Values}{28}
+\contentsline {chapter}{\numberline {A}Overview of Blue Gene/L System}{31}
+\contentsline {section}{\numberline {A.1}RAS Logs}{32}
+\contentsline {chapter}{\numberline {B}Association Rule Learning}{33}
+\contentsline {section}{\numberline {B.1}Useful Terms}{33}
+\contentsline {section}{\numberline {B.2}Apriori Algorithm for Association Rule Learning}{35}
