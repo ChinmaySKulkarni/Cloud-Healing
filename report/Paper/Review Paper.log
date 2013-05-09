@@ -1,0 +1,529 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.19)  8 MAY 2013 21:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Review Paper.tex"
+(./Review Paper.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ba
+sque, danish, dutch, ukenglish, usenglishmax, finnish, french, german, ngerman,
+ swissgerman, hungarian, italian, bokmal, nynorsk, polish, portuguese, spanish,
+ swedish, loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
+istensen
+-- Based on V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 373.
+
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) (/usr/local/texlive/2012basic/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(./Review Paper.aux)
+\openout1 = `"Review Paper.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+ [1{/usr/local/texlive/2012basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 39.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 39.
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]\OT1/ptm/b/n/7 Autonomic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/ptm/b/n/7 Com-put-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/ptm/b/n/7 Sys-tem with
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 41--41
+\OT1/ptm/b/n/7 a Self Heal-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]\OT1/ptm/b/n/7 System and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/ptm/b/n/7 Method for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/ptm/b/n/7 Achiev-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/ptm/b/n/7 Au-to-nomic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/ptm/b/n/7 Com-put-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/ptm/b/n/7 Self Heal-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/ptm/b/n/7 Util-is-ing Meta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]\OT1/ptm/b/n/7 Comparison
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]\OT1/ptm/m/n/7 Sensor State
+ []
+
+
+Underfull \hbox (badness 3396) in paragraph at lines 43--43
+[]\OT1/ptm/m/n/7 Dynamic Sig-na-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]\OT1/ptm/b/n/7 Separate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]\OT1/ptm/b/n/7 Action Rec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/b/n/7 om-men-da-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]\OT1/ptm/m/n/7 Learning based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 on cre-at-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 mod-els and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 map-ping them
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 to on-tol-ogy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 in-cludes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 se-man-tic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 pro-cess-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 de-pen-dency
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 pro-cess-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 and ac-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]\OT1/ptm/m/n/7 Static rules
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 based. Uses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 Lookup ta-ble
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 strat-egy. Also
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 has al-ter-nate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 con-fig-u-ra-tion in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 case the ba-sic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 strat-egy fails
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 and a retry
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 Op-ti-mi-sa-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 pro-posed not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 sys-tem. Job is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 di-vided into
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 two parts -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 de-tec-tion (Base
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 rec-om-men-da-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 (Meta level).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/ptm/m/n/7 Trans-parency
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]\OT1/ptm/b/n/7 Architecture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\OT1/ptm/b/n/7 spe-cific
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 49--49
+[]\OT1/ptm/m/n/7 Error Mit-i-ga-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]\OT1/ptm/m/n/7 Reasoning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]\OT1/ptm/m/n/7 Excessive use
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 of sen-sors.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 Too much of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 in-for-ma-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 col-lected,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 re-quires
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 com-pa-ra-ble
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 hard-ware to
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 53--53
+[]\OT1/ptm/m/n/7 Uses a spe-cific
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 pro-ces-sor that
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 to in-ter-act with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 er-ror mit-i-ga-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 sys-tem. Too
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 much mes-sage
+ []
+
+
+Underfull \hbox (badness 3977) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 Fewer mes-sages
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 passed. Base
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 mes-sages when
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 Strat-egy can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 be eas-ily
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 de-cided and
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 changed with-out
+ []
+
+
+Underfull \hbox (badness 4660) in paragraph at lines 53--53
+\OT1/ptm/m/n/7 mod-i-fi-ca-tions to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[]\OT1/ptm/b/n/7 Dynamic
+ []
+
+(./Review Paper.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 32.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 32.
+ [2])
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[3
+
+] (./Review Paper.aux) ) 
+Here is how much of TeX's memory you used:
+ 1009 strings out of 494578
+ 17145 string characters out of 3168574
+ 77656 words of memory out of 3000000
+ 4289 multiletter control sequences out of 15000+200000
+ 39875 words of font info for 73 fonts, out of 3000000 for 9000
+ 314 hyphenation exceptions out of 8191
+ 26i,10n,19p,2321b,334s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012basic/texmf-dist/fonts/enc/dvip
+s/base/8r.enc}</usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/times/ut
+mb8a.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/times/utmbi8a
+.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+</usr/local/texlive/2012basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "Review Paper.pdf" (3 pages, 66926 bytes).
+PDF statistics:
+ 31 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
